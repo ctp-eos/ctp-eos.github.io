@@ -1190,7 +1190,7 @@
       <!-- ================= CENTER COLUMN ================= -->
       <main class="col col-center">
         <figure class="hero" style="margin:0;">
-          <img src="assets/hero/hero.jpg" alt="CTP-EOS banner — metallic blue Tri-Force triangle on a dark blue background" width="1920" height="1080" />
+          <img id="heroImg" src="assets/hero/hero.jpg" alt="CTP-EOS banner — metallic blue Tri-Force triangle on a dark blue background" width="1920" height="1080" />
           <figcaption>
             <div class="hero-name">CTP-EOS™</div>
             <div class="hero-sub">Not just another Linux distribution — the digital foundation of the CTPVerse.</div>
@@ -1978,5 +1978,29 @@
   start();
 })();
 </script>
+    <script>
+    /* Hero rotation: starts on the blue triangle (hero.jpg), then random-rotates through the hero images. */
+    (function(){
+      var heroImg = document.getElementById('heroImg');
+      if(!heroImg) return;
+      var HEROES = [
+        {src:'assets/hero/hero.jpg', alt:'CTP-EOS banner — metallic blue Tri-Force triangle on a dark blue background'},
+        {src:'assets/hero/tesla-arrival.jpg', alt:"Nikola Tesla — The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence. CTP is the fulfillment of Tesla's prediction. CTP has arrived."}
+      ];
+      var current = 0;
+      var timer = null;
+      function pickNext(){
+        var next;
+        do { next = Math.floor(Math.random()*HEROES.length); } while(next === current && HEROES.length > 1);
+        current = next;
+        heroImg.src = HEROES[current].src;
+        heroImg.alt = HEROES[current].alt;
+      }
+      function start(){ if(timer) return; timer = setInterval(pickNext, 9000); }
+      function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+      document.addEventListener('visibilitychange', function(){ if(document.hidden){ stop(); } else { start(); } });
+      start();
+    })();
+    </script>
   </body>
 </html>
