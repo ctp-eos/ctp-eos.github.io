@@ -145,6 +145,30 @@
       }
       .hero .hero-sub { color: var(--muted); font-size: 14px; margin-top: 2px; }
 
+      /* True dissolve, not a fade through black: the incoming slide is placed
+         fully opaque UNDERNEATH the outgoing one, and the outgoing slide melts
+         away on top of it over 2.8s. At every instant the two images sum to a
+         full picture, so one image bleeds / phases through the other instead
+         of both dipping toward the black background halfway through. */
+      .hero-viewport {
+        position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000000;
+        border: 1px solid var(--border-soft);
+      }
+      .hero-slide {
+        position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; z-index: 0;
+      }
+      .hero-slide.is-active { opacity: 1; visibility: visible; z-index: 1; }
+      .hero-slide.is-leaving {
+        opacity: 0; visibility: visible; z-index: 2;
+        transition: opacity 2.8s cubic-bezier(.45,.02,.3,1), visibility 0s linear 2.8s;
+      }
+      .hero-slide img {
+        display: block; width: 100%; height: 100%; object-fit: cover; object-position: center center; border: 0;
+        -webkit-user-drag: none; user-select: none;
+        transform: scale(1.001); transition: transform 14s linear;
+      }
+      .hero-slide.is-active img { transform: scale(1.06); }
+
       /* ---------- Vision ---------- */
       .vision .lead {
         font-family: "Rajdhani", sans-serif; font-size: 21px; font-weight: 600; color: var(--heading); line-height: 1.3;
@@ -194,6 +218,14 @@
         font-family: "Rajdhani", sans-serif; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 14px;
       }
       .btn:hover { border-color: var(--hover-border); text-decoration: none; }
+
+      /* ---------- Support CTP — GoFundMe ---------- */
+      #support-ctp { scroll-margin-top: 52px; }
+      .support-subtitle { margin: 0; padding: 6px 8px; font-size: 11px; line-height: 1.5; text-align: center; color: var(--text-2); background: var(--blue-wash); border-bottom: 1px solid var(--border-soft); }
+      .support-logo { display: block; width: 100%; height: auto; border-bottom: 1px solid var(--border-soft); background: #000000; }
+      .support-logo-link { display: block; line-height: 0; cursor: pointer; }
+      .support-actions { margin: 10px 0 8px; text-align: center; }
+      .btn-primary { background: var(--blue); border-color: var(--line); color: #ffffff !important; }
 
       /* ---------- CTP Ads ---------- */
       .ad { display: block; border: 1px solid var(--border-soft); background: var(--blue-wash); padding: 10px 12px; margin-bottom: 10px; }
@@ -1190,7 +1222,14 @@
       <!-- ================= CENTER COLUMN ================= -->
       <main class="col col-center">
         <figure class="hero" style="margin:0;">
-          <img id="heroImg" src="assets/hero/hero.jpg" alt="CTP-EOS banner — metallic blue Tri-Force triangle on a dark blue background" width="1920" height="1080" />
+          <div class="hero-viewport">
+            <figure class="hero-slide is-active">
+              <img src="assets/hero/hero.jpg" alt="CTP-EOS banner — metallic blue Tri-Force triangle on a dark blue background" width="1920" height="1080" />
+            </figure>
+            <figure class="hero-slide" aria-hidden="true">
+              <img src="assets/hero/tesla-arrival.jpg" alt="Nikola Tesla — The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence. CTP is the fulfillment of Tesla's prediction. CTP has arrived." width="1920" height="1080" loading="lazy" />
+            </figure>
+          </div>
           <figcaption>
             <div class="hero-name">CTP-EOS™</div>
             <div class="hero-sub">Not just another Linux distribution — the digital foundation of the CTPVerse.</div>
@@ -1521,6 +1560,17 @@
             <p class="big">The front door to the CTPVerse</p>
             <p>News, science, the full CTP-EOS Dev &amp; Rollout area and the pitch deck — and the full theme set this portal shares.</p>
             <a class="btn" href="https://ctpverse.github.io/" target="_blank" rel="noopener">Open the Dashboard</a>
+          </div>
+        </section>
+
+        <section class="module" id="support-ctp" aria-label="Support CTP on GoFundMe">
+          <div class="module-title">Support CTP — GoFundMe</div>
+          <p class="support-subtitle">The CTP crowdsourcing initiative for the startup.</p>
+          <a class="support-logo-link" href="https://gofund.me/4ea0e225c" target="_blank" rel="noopener" aria-label="Support CTP on GoFundMe — CTP Energy logo"><img class="support-logo" src="assets/corporate-logos/ctp-energy-logo.jpg" alt="CTP Energy logo — black disc with C at top, T bottom left, P bottom right, and ENERGY across the middle" width="640" height="640" loading="lazy" /></a>
+          <div class="module-body support-body">
+            <p>Resofactor has built the CTPVerse, the CTP Phase I Archive and CTP-EOS with very little money, funding or resources behind him — carrying the work of Conscious Translational Physics forward largely on his own.</p>
+            <p>With patron support and angel investors stepping up now, CTP goes much further: the research, the facility and the craft development laid out across the CTPVerse can move from documentation into build.</p>
+            <p class="support-actions"><a class="btn btn-primary" href="https://gofund.me/4ea0e225c" target="_blank" rel="noopener">Support CTP on GoFundMe</a></p>
           </div>
         </section>
 
@@ -1979,25 +2029,61 @@
 })();
 </script>
     <script>
-    /* Hero rotation: starts on the blue triangle (hero.jpg), then random-rotates through the hero images. */
+    /* Hero dissolve: starts on the blue triangle (hero.jpg), then random-rotates.
+       True dissolve (mirrors the CTPVerse Dashboard): the incoming slide is placed
+       fully opaque UNDERNEATH the outgoing one, and the outgoing slide melts away
+       on top of it over 2.8s. */
     (function(){
-      var heroImg = document.getElementById('heroImg');
-      if(!heroImg) return;
-      var HEROES = [
-        {src:'assets/hero/hero.jpg', alt:'CTP-EOS banner — metallic blue Tri-Force triangle on a dark blue background'},
-        {src:'assets/hero/tesla-arrival.jpg', alt:"Nikola Tesla — The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence. CTP is the fulfillment of Tesla's prediction. CTP has arrived."}
-      ];
-      var current = 0;
-      var timer = null;
-      function pickNext(){
-        var next;
-        do { next = Math.floor(Math.random()*HEROES.length); } while(next === current && HEROES.length > 1);
-        current = next;
-        heroImg.src = HEROES[current].src;
-        heroImg.alt = HEROES[current].alt;
+      var viewport = document.querySelector('.hero-viewport');
+      if(!viewport) return;
+      var slides = [].slice.call(viewport.querySelectorAll('.hero-slide'));
+      if(slides.length < 2) return;
+      var heroIdx = 0, timer = null;
+      var reduceMotion = false;
+      try{ reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+      function showHero(idx){
+        var prevSlide = slides[heroIdx];
+        heroIdx = (idx + slides.length) % slides.length;
+        var nextSlide = slides[heroIdx];
+        slides.forEach(function(s){
+          if(s === nextSlide){
+            s.classList.remove('is-leaving');
+            s.classList.add('is-active');
+            s.removeAttribute('aria-hidden');
+          } else if(s === prevSlide){
+            s.classList.remove('is-active');
+            s.classList.add('is-leaving');
+            s.setAttribute('aria-hidden','true');
+          } else {
+            s.classList.remove('is-active');
+            s.classList.remove('is-leaving');
+            s.setAttribute('aria-hidden','true');
+          }
+        });
       }
-      function start(){ if(timer) return; timer = setInterval(pickNext, 9000); }
-      function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+      function randomHero(){
+        if(slides.length < 2) return heroIdx;
+        var pool = [];
+        for(var i=0;i<slides.length;i++){ if(i!==heroIdx) pool.push(i); }
+        return pool[Math.floor(Math.random()*pool.length)];
+      }
+      function nextHero(){
+        var target = randomHero();
+        var img = slides[target].querySelector('img');
+        var done = false;
+        function go(){ if(!done){ done=true; showHero(target); } }
+        if(img && img.decode){
+          var p = null;
+          try{ p = img.decode(); }catch(e){}
+          if(p && p.then){ p.then(go,go); setTimeout(go,600); } else { go(); }
+        } else { go(); }
+      }
+      function stop(){ if(timer){ clearInterval(timer); timer=null; } }
+      function start(){
+        stop();
+        if(reduceMotion || slides.length < 2) return;
+        timer = setInterval(nextHero, 11000);
+      }
       document.addEventListener('visibilitychange', function(){ if(document.hidden){ stop(); } else { start(); } });
       start();
     })();
