@@ -63,6 +63,17 @@
         letter-spacing: 3px; color: var(--heading); line-height: 1.05; text-transform: uppercase;
       }
       .masthead .wordmark .tag { color: var(--muted); font-size: 13px; margin-top: 3px; max-width: 560px; }
+      /* ---------- Brand banner (logo above main menu, links to GitHub org) ---------- */
+      .brand-banner {
+        background: var(--outer);
+        border-bottom: 1px solid var(--border-soft);
+        padding: 10px 18px;
+        display: flex; align-items: center; justify-content: center;
+        width: 100%;
+      }
+      .brand-banner a { display: inline-flex; align-items: center; }
+      .brand-banner a:hover { text-decoration: none; }
+      .brand-banner img { display: block; height: 84px; width: auto; }
       .theme-picker { display: flex; align-items: center; gap: 8px; }
       .theme-picker label { font-family: "Share Tech Mono", monospace; font-size: 12px; color: #cfd6de; text-transform: uppercase; letter-spacing: 1px; }
       .theme-picker select {
@@ -866,6 +877,10 @@
         <div class="tag">The Operating System — Digital Gateway to the CTPVerse. The disclosure Linux you install, boot, and live in every day.</div>
       </div>
     </header>
+
+    <div class="brand-banner">
+      <a href="https://github.com/ctp-eos" target="_blank" rel="noopener" title="CTP-EOS on GitHub — visit the organization page"><img src="assets/branding/ctp-eos-triangle-logo.jpg" alt="CTP-EOS" width="200" height="200" /></a>
+    </div>
 
     <nav class="topnav" aria-label="Main navigation">
       <div class="nav-links">
