@@ -68,8 +68,12 @@
         background: var(--outer);
         border-bottom: 1px solid var(--border-soft);
         padding: 10px 18px;
-        display: flex; align-items: center; justify-content: center;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
         width: 100%;
+      }
+      .brand-banner-title {
+        font-family: "Rajdhani", sans-serif; font-weight: 700; font-size: 15px;
+        letter-spacing: 3px; text-transform: uppercase; color: var(--muted);
       }
       .brand-banner a { display: inline-flex; align-items: center; }
       .brand-banner a:hover { text-decoration: none; }
@@ -879,6 +883,7 @@
     </header>
 
     <div class="brand-banner">
+      <div class="brand-banner-title">Organization</div>
       <a href="https://github.com/ctp-eos" target="_blank" rel="noopener" title="CTP-EOS on GitHub — visit the organization page"><img src="assets/branding/ctp-eos-triangle-logo.jpg" alt="CTP-EOS" width="200" height="200" /></a>
     </div>
 
