@@ -63,21 +63,6 @@
         letter-spacing: 3px; color: var(--heading); line-height: 1.05; text-transform: uppercase;
       }
       .masthead .wordmark .tag { color: var(--muted); font-size: 13px; margin-top: 3px; max-width: 560px; }
-      /* ---------- Brand banner (logo above main menu, links to GitHub org) ---------- */
-      .brand-banner {
-        background: var(--outer);
-        border-bottom: 1px solid var(--border-soft);
-        padding: 10px 18px;
-        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
-        width: 100%;
-      }
-      .brand-banner-title {
-        font-family: "Rajdhani", sans-serif; font-weight: 700; font-size: 15px;
-        letter-spacing: 3px; text-transform: uppercase; color: var(--muted);
-      }
-      .brand-banner a { display: inline-flex; align-items: center; }
-      .brand-banner a:hover { text-decoration: none; }
-      .brand-banner img { display: block; height: 84px; width: auto; }
       .theme-picker { display: flex; align-items: center; gap: 8px; }
       .theme-picker label { font-family: "Share Tech Mono", monospace; font-size: 12px; color: #cfd6de; text-transform: uppercase; letter-spacing: 1px; }
       .theme-picker select {
@@ -271,7 +256,7 @@
          outer edges by construction: in Nuke mode both are exactly
          the shell's 1180px, left and right edges flush; in Full mode
          both are 100% together. */
-      .masthead, .brand-banner, .topnav, .layout, footer.site-foot {
+      .masthead, .topnav, .layout, footer.site-foot {
         box-sizing: border-box;
         width: 100%;
         max-width: none;
@@ -882,11 +867,6 @@
       </div>
     </header>
 
-    <div class="brand-banner">
-      <div class="brand-banner-title">CTP-EOS Organization</div>
-      <a href="https://github.com/ctp-eos" target="_blank" rel="noopener" title="CTP-EOS on GitHub — visit the organization page"><img src="assets/branding/ctp-eos-triangle-logo.jpg" alt="CTP-EOS" width="200" height="200" /></a>
-    </div>
-
     <nav class="topnav" aria-label="Main navigation">
       <div class="nav-links">
       <a href="#top">Home</a>
@@ -952,6 +932,11 @@
 
       <!-- ================= LEFT COLUMN ================= -->
       <aside class="col col-left">
+        <section class="module" aria-label="CTP-EOS Organization">
+          <div class="module-title">CTP-EOS Organization</div>
+          <div class="module-body" style="line-height:0;"><a href="https://github.com/ctp-eos" target="_blank" rel="noopener" title="CTP-EOS on GitHub — visit the organization page"><img src="assets/branding/ctp-eos-triangle-logo.jpg" alt="CTP-EOS" width="200" height="200" style="display:block; width:100%; height:auto;" /></a></div>
+        </section>
+
         <section class="module" aria-label="Main menu">
           <div class="module-title">Main Menu</div>
           <ul class="menu">
