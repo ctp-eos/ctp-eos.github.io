@@ -878,6 +878,24 @@
       .mp-genre { font-size: 12px; color: var(--text); }
       .mp-status { margin-top: 9px; font-size: 12px; font-weight: 600; letter-spacing: .03em; color: var(--text); }
       .mp-source { font-family: "Share Tech Mono", monospace; font-size: 11px; color: var(--text); word-break: break-all; margin-top: 3px; }
+    
+      /* Support CTP — PayPal (copied from the CTPVerse Dashboard) */
+      #support-ctp-paypal{scroll-margin-top:52px}
+      #support-ctp-paypal .btn{max-width:100%; white-space:normal; text-align:center; justify-content:center; line-height:1.4; overflow-wrap:anywhere}
+      .support-body p{margin:0 0 8px}
+      .support-body p:last-child{margin-bottom:0}
+      /* PayPal logo — large clickable brand mark at the top of the PayPal module */
+      .paypal-logo-link{display:block; background:#ffffff; text-decoration:none; line-height:1; text-align:center; border-bottom:1px solid var(--blue); padding:16px 8px 14px; cursor:pointer}
+      .paypal-logo-link:hover{background:#eef6fd; text-decoration:none}
+      .paypal-logo-link:focus-visible{outline:3px solid #009cde; outline-offset:-3px}
+      .paypal-logo{display:inline-flex; align-items:center; gap:7px}
+      .paypal-mark{position:relative; display:inline-block; width:32px; height:36px; flex:0 0 auto}
+      .paypal-mark .pp{position:absolute; top:0; font-family:Verdana,Tahoma,Arial,sans-serif; font-weight:900; font-style:italic; font-size:36px; line-height:1}
+      .paypal-mark .pp-dark{left:0; color:#003087}
+      .paypal-mark .pp-light{left:11px; top:5px; color:#009cde; opacity:.92; font-size:32px}
+      .paypal-word{font-family:Verdana,Tahoma,Arial,sans-serif; font-size:29px; font-weight:900; font-style:italic; letter-spacing:-1.5px; line-height:1; white-space:nowrap}
+      .paypal-word .pay{color:#003087}
+      .paypal-word .pal{color:#009cde}
     </style>
   </head>
   <body id="top">
@@ -1686,7 +1704,16 @@
             <p style="margin-top:10px;">On CTP-EOS, Club CTP is the membership layer of the OS itself — the identity that carries across CTP Music, CTP University and CTP-EOS. <a href="https://ctp-music.github.io/#club" target="_blank" rel="noopener">See Club CTP on the Music Portal ↗</a></p>
           </div>
         </section>
-      </aside>
+<section class="module" id="support-ctp-paypal" aria-label="Support CTP via PayPal">
+          <div class="module-title">Support CTP — PayPal</div>
+          <a class="paypal-logo-link" href="https://www.paypal.com/donate?business=ctpenergy@gmail.com" target="_blank" rel="noopener" aria-label="Donate to CTP via PayPal"><span class="paypal-logo" aria-hidden="true"><span class="paypal-mark"><span class="pp pp-dark">P</span><span class="pp pp-light">P</span></span><span class="paypal-word"><span class="pay">Pay</span><span class="pal">Pal</span></span></span></a>
+          <p class="support-subtitle">A separate campaign — direct support via PayPal.</p>
+          <div class="module-body support-body">
+            <p>This is a separate way to support the work directly via PayPal, separate from the GoFundMe campaign above.</p>
+            <p class="support-actions"><a class="btn btn-primary" href="https://www.paypal.com/donate?business=ctpenergy@gmail.com" target="_blank" rel="noopener">Support via PayPal</a></p>
+          </div>
+        </section>
+</aside>
     </div>
 
     <footer class="site-foot">
