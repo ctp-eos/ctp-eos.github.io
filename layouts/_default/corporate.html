@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="eos" data-width="nuke">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body class="corp">
+<div class="wrap">
+
+  <header class="site-header">
+    <div class="brand">
+      <svg width="46" height="46" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 4 L44 40 L4 40 Z" stroke="currentColor" stroke-width="1.6" fill="none" />
+        <path d="M24 14 L36 36 L12 36 Z" stroke="currentColor" stroke-width="1.2" fill="none" />
+        <circle cx="24" cy="26" r="3.2" stroke="currentColor" stroke-width="1.2" fill="none" />
+      </svg>
+      <div>
+        <div class="brand-name">CTP-EOS<sup>™</sup></div>
+        <div class="brand-tag">The Operating System — Digital Gateway to the CTPVerse. The disclosure Linux you install, boot, and live in every day.</div>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#os">The OS</a>
+      <a href="#editions">Editions</a>
+      <a href="#rollout">Rollout</a>
+      <a href="#press">Press</a>
+      <a href="https://ctpverse.github.io/">Club CTP</a>
+      <a href="https://ctpverse.github.io/">Ecosystem</a>
+    </nav>
+    <div class="header-controls">
+      <div class="control">
+        <label for="siteModeSelect">Site Mode</label>
+        <select id="siteModeSelect" aria-label="Site mode">
+          <option value="wide">Wide</option>
+          <option value="nuke">Nuke</option>
+          <option value="corporate" selected>Corporate</option>
+        </select>
+      </div>
+      <div class="control">
+        <label for="themeSelect">Theme</label>
+        <select id="themeSelect" aria-label="Site theme">
+          <option value="calamares">Calamares</option>
+          <option value="eos" selected>CTP-EOS Cynamic</option>
+          <option value="eos-light">CTP-EOS Light</option>
+          <option value="eos-medium">CTP-EOS Medium</option>
+          <option value="eos-medium-dark">CTP-EOS Medium Dark</option>
+          <option value="eos-dark">CTP-EOS Dark</option>
+          <option value="space-cadet-light">CTP Space Cadet Light</option>
+          <option value="space-cadet-medium">CTP Space Cadet Medium</option>
+          <option value="space-cadet-medium-dark">CTP Space Cadet Medium Dark</option>
+          <option value="space-cadet-dark">CTP Space Cadet Dark</option>
+          <option value="midnight-blue">CTP Midnight Blue</option>
+          <option value="midnight">CTP Midnight</option>
+          <option value="tecknotronic-psy">CTP Tecknotronic Psy</option>
+          <option value="tecknotronic-matrix">CTP Tecknotronic Matrix</option>
+          <option value="ctpix">CTPIX</option>
+          <option value="cdomain-light">C-domain Light</option>
+          <option value="cdomain-medium">C-domain Medium</option>
+          <option value="cdomain-medium-dark">C-domain Medium Dark</option>
+          <option value="cdomain-dark">C-domain Dark</option>
+          <option value="frey-light">Frey Light</option>
+          <option value="frey-medium">Frey Medium</option>
+          <option value="frey-medium-dark">Frey Medium Dark</option>
+          <option value="frey-dark">Frey Dark</option>
+          <option value="light">Light</option>
+          <option value="medium">Medium</option>
+          <option value="dark">Dark</option>
+          <option value="nuke-dark">Nuke Dark</option>
+          <option value="matrix">Matrix</option>
+          <option value="amber">Amber</option>
+          <option value="catppuccin">Catppuccin</option>
+          <option value="cerulean">Cerulean</option>
+          <option value="synthwave">Synthwave</option>
+          <option value="dracula">Dracula</option>
+          <option value="nord">Nord</option>
+          <option value="cyberpunk">Cyberpunk</option>
+          <option value="tokyonight">Tokyo Night</option>
+          <option value="solarized">Solarized</option>
+          <option value="void-signal">Void Signal</option>
+          <option value="plasma-field">Plasma Field</option>
+          <option value="cathode-green">Cathode Green</option>
+          <option value="deep-current">Deep Current</option>
+          <option value="convergence">Convergence</option>
+          <option value="convergence-light">Convergence Light</option>
+          <option value="convergence-medium">Convergence Medium</option>
+          <option value="convergence-medium-dark">Convergence Medium Dark</option>
+          <option value="convergence-dark">Convergence Dark</option>
+          <option value="corporate">Corporate</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <div>
+        <div class="eyebrow">CTP-EOS™</div>
+        <h1>CTP-EOS — the disclosure Linux you install, boot, and live in every day</h1>
+        <p>Every major technology era has produced identity-driven platforms. CTP-EOS is the CTP Energy Operating System™ — a branded computing platform designed to become the digital foundation of the CTPVerse, and the first daily interaction users have with the CTP brand.</p>
+      </div>
+      <img src="{{ "assets/hero/hero.jpg" | relURL }}" alt="CTP-EOS desktop" width="1920" height="1080" />
+    </section>
+
+    <section class="panel vision" id="os" aria-label="The OS">
+      <div>
+        <div class="eyebrow">The OS</div>
+        <p style="margin-top:12px;">CTP-EOS is the CTP Energy Operating System™ / CTP Extraterrestrial Operating System™. It is built on Conscious Translational Physics — and the disclosure is the nature of consciousness, conscience and reality itself. CTP-EOS is the digital gateway to that future.</p>
+        <p class="lead">What sits underneath:</p>
+        <ul>
+          <li>Debian &amp; Arch derived base</li>
+          <li>Proprietary CTP operating-system layer</li>
+          <li>CTPSci Sciences · C-domain</li>
+        </ul>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/></svg></div>
+          <span>Debian &amp; Arch derived</span>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 L2 7 l10 5 10-5 z"/><path d="M2 12 l10 5 10-5"/><path d="M2 17 l10 5 10-5"/></svg></div>
+          <span>CTP layer, held in-house</span>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3.2"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/></svg></div>
+          <span>CTPSci · C-domain</span>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <span>Creators · Developers · Gamers · Musicians</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="duo">
+      <section class="panel mission" id="rollout" aria-label="Rollout">
+        <div class="eyebrow">Rollout</div>
+        <h2>CTP-EOS first — the MVP the rest of the program builds on.</h2>
+        <p class="shout">Ship Part I everywhere. Build &amp; brand Part II. Teach Part III.</p>
+        <p>Wallpapers &amp; themes for any OS first — lowest friction, widest reach. Then the Debian &amp; Arch distributions for developers. Then CTPSci / C-domain practice — the consciousness OS that prepares people for CTP Energy Systems.</p>
+      </section>
+
+      <section class="panel" id="editions" aria-label="Editions — the three parts">
+        <div class="vessel-text">
+          <div class="eyebrow">Editions — The Three Parts</div>
+          <h2>One OS, three parts</h2>
+          <p>The CTP Energy Operating System™, divided into three main parts — from the desktop identity anyone can install today to the consciousness layer underneath.</p>
+          <ul class="checks">
+            <li>Part I — Themes &amp; Wallpapers, the entry layer</li>
+            <li>Part II — Debian &amp; Arch-based Linux distributions</li>
+            <li>Part III — Non-physical / C-Spiritual OS (CSOP)</li>
+            <li>Free software is the customer acquisition strategy</li>
+          </ul>
+          <a class="btn" href="https://ctp-eos.github.io/#editions">View Editions →</a>
+        </div>
+        <div class="panel-img">
+          <img src="{{ "assets/ctp-eos/installer-crop.jpg" | relURL }}" alt="CTP-EOS Calamares installer" width="1920" height="1080" />
+        </div>
+      </section>
+    </div>
+
+    <section id="news" aria-label="CTP-EOS News">
+      <div class="news-head">
+        <h2>CTP-EOS News</h2>
+        <a href="https://ctp-eos.github.io/#news">View All News →</a>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="date">November 2026</div>
+          <h3>The new CTP-EOS site is live</h3>
+          <p>This portal replaces the archived first version. It is built on the same CTPVerse structure as the other five sites.</p>
+        </article>
+        <article class="news-card">
+          <div class="date">November 2026</div>
+          <h3>CTP-EOS — Dev &amp; Rollout, on the Dashboard</h3>
+          <p>The Dashboard carries CTP-EOS as its own area — the three parts, the rollout sequence and the full pitch deck.</p>
+        </article>
+        <article class="news-card">
+          <div class="date">November 2026</div>
+          <h3>CTP-EOS first — the MVP</h3>
+          <p>The corrected CTP rollout order puts CTP-EOS Linux first as the MVP, conscience sciences attached, onboarded via existing technology.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lower" aria-label="More from CTP-EOS" id="press">
+      <div class="lower-grid">
+        <article class="lower-card">
+          <div class="eyebrow">Press Room</div>
+          <h3>The press case for CTP-EOS</h3>
+          <p>The 14-page pitch deck — &ldquo;CTP-EOS: The Operating System — Digital Gateway to the CTPVerse&rdquo; — carries the press case. CTP-EOS on LinkedIn and GitHub.</p>
+          <a class="btn" href="https://ctp-eos.github.io/#press">Press Room →</a>
+        </article>
+        <article class="lower-card">
+          <div class="eyebrow">Ecosystem</div>
+          <h3>The CTPVerse, six properties live</h3>
+          <p>CTPVerse Dashboard · CTP Space Systems · CTP-EOS · CTP Music · FIN-DSP · CTP Magazine. Every business unit site deploys off the Club CTP backend.</p>
+          <a class="btn" href="https://ctpverse.github.io/">Visit CTPVerse →</a>
+        </article>
+        <article class="lower-card">
+          <div class="eyebrow">System Status</div>
+          <h3>Product — CTP-EOS™</h3>
+          <p>CTP Energy Operating System™. Site live in Alpha; the OS itself is in development — Calamares installer and working ISOs still to come.</p>
+          <p class="contact">Investor &amp; press contact: <a href="mailto:info@ctp-energy.com">info@ctp-energy.com</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="foot-main">
+      <span class="foot-brand">CTP-EOS™ — Conscious Translational Physics · CTP Energy</span>
+      <span class="foot-links"><a href="https://ctpverse.github.io/">CTPVerse</a> · <a href="https://ctp-space-systems.github.io/">CTP Space Systems</a> · <a href="https://ctp-music.github.io/">CTP Music</a> · <a href="https://fin-dsp.github.io/">FIN-DSP</a> · <a href="https://ctp-magazine.github.io/">CTP Magazine</a></span>
+    </div>
+    <div class="foot-sub">
+      <span>CTP-EOS™ — The Operating System, Digital Gateway to the CTPVerse. The disclosure Linux: a branded computing platform based on Conscious Translational Physics.</span>
+      <span><a href="{{ "/" | relURL }}">Present version (Nuke portal)</a> · <a href="mailto:info@ctp-energy.com">info@ctp-energy.com</a> · Copyright © 2026 CTP Energy, LLC</span>
+    </div>
+  </footer>
+
+</div>
+<script src="{{ "js/site-mode.js" | relURL }}"></script>
+</body>
+</html>

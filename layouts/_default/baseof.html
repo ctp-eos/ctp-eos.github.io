@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" data-theme="eos" data-width="nuke">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body id="top"{{ if .Params.corporate }} class="corp"{{ end }}>
+<div class="site-shell">
+{{ partial "header.html" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . }}
+</div><!-- /.site-shell -->
+{{ partial "scripts.html" . }}
+</body>
+</html>

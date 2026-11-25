@@ -31,3 +31,8 @@ __pycache__/
 # Build output
 dist/
 build/
+
+# Hugo build output
+public/
+resources/
+.hugo_build.lock

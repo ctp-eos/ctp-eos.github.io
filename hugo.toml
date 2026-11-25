@@ -1,0 +1,16 @@
+baseURL = "https://ctp-eos.github.io/"
+title = "CTP-EOS"
+languageCode = "en"
+enableRobotsTXT = true
+
+# No taxonomies are used on this site.
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    # Raw HTML inside markdown (structural blocks, tables, image slots) is
+    # part of the content and must pass through unchanged.
+    unsafe = true
+  [markup.goldmark.renderer]
+    # Keep heading IDs stable for anchor links.
+    unsafe = true

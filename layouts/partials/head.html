@@ -1,0 +1,17 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<script>(function(){try{var q=null;try{q=new URLSearchParams(window.location.search).get('width');}catch(e){}if(q==='full'||q==='nuke'){document.documentElement.setAttribute('data-width',q);return;}var w=localStorage.getItem('ctp-width');if(w==='full'||w==='nuke'){document.documentElement.setAttribute('data-width',w);}}catch(e){}})();</script>
+<script>(function(){try{var VALID=['calamares','eos','eos-light','eos-medium','eos-medium-dark','eos-dark','space-cadet-light','space-cadet-medium','space-cadet-medium-dark','space-cadet-dark','midnight-blue','midnight','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','void-signal','plasma-field','cathode-green','deep-current','convergence','convergence-light','convergence-medium','convergence-medium-dark','convergence-dark','corporate'];var t=localStorage.getItem('ctp-eos-theme');if(t&&VALID.indexOf(t)>-1){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<link rel="icon" href="{{ "assets/branding/ctp-eos-logo.jpg" | relURL }}" />
+<title>{{ if .IsHome }}CTP-EOS{{ else if .Params.corporate }}{{ .Title }}{{ else }}{{ .Title }} — CTP-EOS{{ end }}</title>
+<meta name="description" content="CTP-EOS™ — The Operating System, Digital Gateway to the CTPVerse. The disclosure Linux: a branded computing platform built on Conscious Translational Physics, by CTP Energy." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+{{ if .Params.corporate }}
+{{ $corp := resources.Get "css/corporate.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $corp.RelPermalink }}" />
+{{ end }}
