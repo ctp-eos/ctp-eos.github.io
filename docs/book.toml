@@ -1,0 +1,17 @@
+[book]
+title = "CTP-EOS Documentation"
+authors = ["Resofactor"]
+description = "Documentation for CTP-EOS, the disclosure Linux distribution."
+language = "en"
+multilingual = false
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "dark"
+preferred-dark-theme = "dark"
+git-repository-url = "https://github.com/ctp-eos/ctp-eos.github.io"
+edit-url-template = "https://github.com/ctp-eos/ctp-eos.github.io/edit/main/docs/{path}"
