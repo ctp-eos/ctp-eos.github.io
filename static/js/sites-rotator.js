@@ -1,5 +1,5 @@
     (function(){
-      /* CTPVerse Sites rotator — random 1:1 banner, one of the five other CTP sites. */
+      /* CTPVerse Sites rotator — random 1:1 banner, one of the six other CTP sites. */
       var sites = [
         { name: 'CTPVerse Dashboard', img: 'https://ctpverse.github.io/images/branding/ctpverse-org-avatar.jpg', url: 'https://ctpverse.github.io/' },
         { name: 'CTP Magazine', img: 'https://ctp-magazine.github.io/assets/branding/ctp-magazine-1254x1254.png', url: 'https://ctp-magazine.github.io/' },
