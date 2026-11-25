@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="layout">
+{{ partial "sidebar-left.html" . }}
+<main class="col col-center">
+        <section class="module" aria-label="{{ .Title }}">
+          <div class="module-title">{{ .Title }}</div>
+          <div class="module-body">
+            {{ .Content }}
+          </div>
+        </section>
+      </main>
+{{ partial "sidebar-right.html" . }}
+</div>
+{{ end }}
