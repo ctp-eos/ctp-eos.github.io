@@ -1,0 +1,338 @@
+/* CTP-EOS — corporate layout stylesheet.
+   Rewritten from the Grok preview (ctpeos-grok-layout/grok-layout.css) to use
+   the site theme variables defined by the portal's [data-theme="..."] blocks,
+   so every colour theme applies to the corporate page. Geometry (max-width,
+   grids, spacing, radii) is kept exactly as in the Grok preview.
+   EVERY rule is scoped under body.corp so nothing leaks into the Nuke portal.
+   Load order: this file AFTER the portal's main.css, so body.corp rules win.
+
+   Variable mapping (Grok preview -> site theme):
+     --bg      -> var(--page)
+     --panel   -> var(--surface)
+     --panel-2 -> var(--surface)   (defined in the Grok :root, unused by its rules)
+     --text    -> var(--text)
+     --text-2  -> var(--text-2)
+     --muted   -> var(--muted)
+     --line    -> var(--line)
+     --line-2  -> var(--border-soft, var(--line))
+     --accent  -> var(--link, #2AA5C4)  (EOS/Camarares link cyan; #2AA5C4 fallback) */
+
+body.corp, body.corp * { box-sizing: border-box; margin: 0; padding: 0; }
+
+html:has(> body.corp) { scroll-behavior: smooth; }
+
+body.corp {
+  background: var(--page);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.corp a { color: var(--text); text-decoration: none; }
+body.corp a:hover { text-decoration: underline; }
+
+body.corp .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+body.corp .eyebrow {
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+body.corp h1, body.corp h2, body.corp .serif {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+/* ---------- header ---------- */
+body.corp .site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 30px 0 22px;
+  border-bottom: 1px solid var(--line);
+}
+body.corp .brand { display: flex; gap: 16px; align-items: flex-start; }
+body.corp .brand svg { flex: none; margin-top: 4px; color: var(--text); }
+body.corp .brand-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+body.corp .brand-name sup { font-size: 13px; }
+body.corp .brand-tag {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 460px;
+  line-height: 1.45;
+}
+body.corp .main-nav {
+  display: flex;
+  gap: 20px;
+  padding-top: 12px;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+body.corp .main-nav a {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+body.corp .main-nav a:hover { color: var(--link, #2AA5C4); text-decoration: none; }
+
+/* ---------- header controls: Site Mode + Theme selects ---------- */
+body.corp .header-controls {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding-top: 16px;
+}
+body.corp .header-controls .control { display: flex; align-items: center; gap: 8px; }
+body.corp .header-controls label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted);
+}
+body.corp .header-controls select {
+  background: var(--input-bg, var(--surface));
+  color: var(--text);
+  border: 1px solid var(--border-soft, var(--line));
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 13px;
+  font-family: inherit;
+}
+body.corp .header-controls select:focus {
+  outline: 2px solid var(--link, #2AA5C4);
+  outline-offset: 1px;
+}
+
+/* ---------- hero ---------- */
+body.corp .hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 44px;
+  align-items: center;
+  padding: 44px 0 40px;
+}
+body.corp .hero h1 { font-size: 42px; margin: 14px 0 18px; }
+body.corp .hero h1 sup { font-size: 18px; }
+body.corp .hero p { font-size: 17px; color: var(--text-2); max-width: 560px; }
+body.corp .hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  align-self: center;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+/* ---------- panels ---------- */
+body.corp .panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 30px;
+}
+body.corp .panel h2 { font-size: 27px; margin: 10px 0 14px; }
+body.corp .panel h2 sup { font-size: 13px; }
+body.corp .panel p { color: var(--text-2); font-size: 15.5px; }
+body.corp .panel p + p { margin-top: 12px; }
+
+/* ---------- vision ---------- */
+body.corp .vision {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+body.corp .vision ul { margin: 14px 0 0 20px; color: var(--text-2); font-size: 15.5px; }
+body.corp .vision ul li { margin: 4px 0; }
+body.corp .vision .lead { font-weight: 600; color: var(--text); margin-top: 16px; }
+body.corp .features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+body.corp .feature { text-align: center; }
+body.corp .feature .icon {
+  width: 58px; height: 58px;
+  margin: 0 auto 10px;
+  border: 1px solid var(--border-soft, var(--line));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text);
+}
+body.corp .feature .icon svg { width: 26px; height: 26px; }
+body.corp .feature span {
+  display: block;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--text-2);
+}
+
+/* ---------- mission + vessel ---------- */
+body.corp .duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+body.corp .mission .shout {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 16px;
+}
+body.corp .vessel-body { display: flex; gap: 22px; align-items: flex-start; }
+body.corp .vessel-text { flex: 1.25; }
+body.corp .vessel-text p { font-size: 14.5px; }
+body.corp .vessel-img {
+  flex: 1;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  min-height: 150px;
+}
+body.corp .vessel-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 65% 30%;
+  display: block;
+}
+body.corp .checks { list-style: none; margin: 14px 0 18px; }
+body.corp .checks li {
+  font-size: 14.5px;
+  color: var(--text-2);
+  padding-left: 26px;
+  position: relative;
+  margin: 7px 0;
+}
+body.corp .checks li::before {
+  content: "✓";
+  position: absolute;
+  left: 0; top: 0;
+  color: var(--link, #2AA5C4);
+  font-weight: 700;
+}
+body.corp .btn {
+  display: inline-block;
+  border: 1px solid var(--border-soft, var(--line));
+  border-radius: 6px;
+  padding: 9px 16px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text);
+}
+body.corp .btn:hover { border-color: var(--link, #2AA5C4); color: var(--link, #2AA5C4); text-decoration: none; }
+
+/* ---------- news ---------- */
+body.corp .news-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 44px 0 18px;
+}
+body.corp .news-head h2 { font-size: 15px; letter-spacing: 2px; text-transform: uppercase; font-family: inherit; font-weight: 700; }
+body.corp .news-head a { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
+body.corp .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+body.corp .news-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px;
+}
+body.corp .news-card .date {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+body.corp .news-card h3 { font-size: 18px; line-height: 1.3; margin: 10px 0 8px; font-weight: 700; }
+body.corp .news-card p { font-size: 14px; color: var(--text-2); }
+
+/* ---------- footer ---------- */
+body.corp .site-footer {
+  border-top: 1px solid var(--line);
+  margin-top: 48px;
+  padding: 26px 0 34px;
+  color: var(--muted);
+  font-size: 13.5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+body.corp .site-footer a { color: var(--text-2); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  body.corp .hero { grid-template-columns: 1fr; }
+  body.corp .hero h1 { font-size: 36px; }
+  body.corp .vision { grid-template-columns: 1fr; }
+  body.corp .features { grid-template-columns: repeat(2, 1fr); }
+  body.corp .duo { grid-template-columns: 1fr; }
+  body.corp .news-grid { grid-template-columns: 1fr; }
+  body.corp .site-header { flex-direction: column; }
+  body.corp .main-nav { justify-content: flex-start; padding-top: 0; }
+  body.corp .header-controls { justify-content: flex-start; padding-top: 0; }
+  body.corp .vessel-body { flex-direction: column; }
+  body.corp .vessel-img { width: 100%; }
+}
+
+/* full-width image inside a panel (CTP-EOS Editions) */
+body.corp .panel-img { margin-top: 20px; border-radius: 10px; border: 1px solid var(--line); overflow: hidden; }
+body.corp .panel-img img { width: 100%; height: 180px; object-fit: cover; object-position: 65% 30%; display: block; }
+
+/* ---------- lower modules ---------- */
+body.corp .lower { margin-top: 44px; }
+body.corp .lower-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+body.corp .lower-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px;
+}
+body.corp .lower-card h3 { font-size: 18px; line-height: 1.3; margin: 10px 0 8px; font-weight: 700; }
+body.corp .lower-card p { font-size: 14px; color: var(--text-2); }
+body.corp .lower-card p + p { margin-top: 10px; }
+body.corp .lower-card .btn { margin-top: 14px; }
+body.corp .lower-card .contact { font-size: 13.5px; }
+body.corp .lower-card .contact a { color: var(--link, #2AA5C4); }
+
+/* ---------- footer (expanded) ---------- */
+body.corp .site-footer { flex-direction: column; gap: 12px; }
+body.corp .foot-main, body.corp .foot-sub {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+body.corp .foot-brand { color: var(--text); font-weight: 600; }
+body.corp .foot-sub { font-size: 12.5px; }
+
+@media (max-width: 900px) {
+  body.corp .lower-grid { grid-template-columns: 1fr; }
+}
