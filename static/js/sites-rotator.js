@@ -1,12 +1,13 @@
     (function(){
-      /* CTPVerse Sites rotator — random 1:1 banner, one of the six other CTP sites. */
+      /* CTPVerse Sites rotator — random 1:1 banner, one of the seven other CTP sites. */
       var sites = [
         { name: 'CTPVerse Dashboard', img: 'https://ctpverse.github.io/images/branding/ctpverse-org-avatar.jpg', url: 'https://ctpverse.github.io/' },
         { name: 'CTP Magazine', img: 'https://ctp-magazine.github.io/assets/branding/ctp-magazine-1254x1254.png', url: 'https://ctp-magazine.github.io/' },
         { name: 'FIN-DSP', img: 'https://fin-dsp.github.io/assets/branding/findsp-logo-200x200.jpg', url: 'https://fin-dsp.github.io/' },
         { name: 'CTP Music Portal', img: 'https://ctp-music.github.io/assets/branding/ctp-music-org-avatar.jpg', url: 'https://ctp-music.github.io/' },
         { name: 'CTP Space Systems', img: 'https://ctp-space-systems.github.io/assets/branding/ctp-space-systems-org-avatar.jpg', url: 'https://ctp-space-systems.github.io/' },
-        { name: 'CTP-PSY', img: 'https://ctp-psy.github.io/assets/branding/ctp-psy-org-avatar.jpg', url: 'https://ctp-psy.github.io/' }
+        { name: 'CTP-PSY', img: 'https://ctp-psy.github.io/assets/branding/ctp-psy-org-avatar.jpg', url: 'https://ctp-psy.github.io/' },
+        { name: 'CTPETEAMS', img: 'https://ctpeteams.github.io/assets/branding/ctpeteams-logo-400.jpg', url: 'https://ctpeteams.github.io/' }
       ];
       var link = document.getElementById('ctpverse-sites-rotator-link');
       var img = document.getElementById('ctpverse-sites-rotator-img');
