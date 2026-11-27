@@ -265,10 +265,15 @@
         .masthead .wordmark .name { font-size: 24px; }
         .hero .hero-name { font-size: 21px; }
         .featured img { width: 150px; height: 150px; }
-        /* Mobile nav: let the bar wrap to two rows so nothing is cut off. */
+        /* Mobile nav: let the bar wrap so nothing is cut off, and keep it tidy:
+           links a touch smaller for an even wrap, controls stacked full-width
+           with room to breathe and selects wide enough to show their text. */
         .topnav { flex-wrap: wrap; }
+        .topnav a { font-size: 15px; padding: 10px 8px; }
         .nav-links { flex-wrap: wrap; }
-        .nav-controls { flex-wrap: wrap; min-width: 0; flex: 1 1 auto; margin-left: 0; }
+        .nav-controls { flex-wrap: wrap; min-width: 0; flex: 1 1 auto; margin-left: 0; padding: 8px 10px; gap: 8px; }
+        .nav-controls .theme-picker { flex: 1 1 100%; min-width: 0; }
+        .nav-controls .theme-picker select { max-width: none; flex: 1 1 auto; min-width: 0; }
       }
       @media (prefers-reduced-motion: reduce) {
         html { scroll-behavior: auto; }
