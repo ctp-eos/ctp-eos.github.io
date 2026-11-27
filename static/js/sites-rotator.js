@@ -1,14 +1,14 @@
     (function(){
       /* CTPVerse Sites rotator — random 1:1 banner, one of the seven other CTP sites. */
       var sites = [
-        { name: 'CTPVerse Dashboard', img: 'https://ctpverse.github.io/images/branding/ctpverse-org-avatar.jpg', url: 'https://ctpverse.github.io/' },
-        { name: 'CTP Magazine', img: 'https://ctp-magazine.github.io/assets/branding/ctp-magazine-1254x1254.png', url: 'https://ctp-magazine.github.io/' },
-        { name: 'FIN-DSP', img: 'https://fin-dsp.github.io/assets/branding/findsp-logo-200x200.jpg', url: 'https://fin-dsp.github.io/' },
-        { name: 'CTP Music Portal', img: 'https://ctp-music.github.io/assets/branding/ctp-music-org-avatar.jpg', url: 'https://ctp-music.github.io/' },
-        { name: 'CTP Space Systems', img: 'https://ctp-space-systems.github.io/assets/branding/ctp-space-systems-org-avatar.jpg', url: 'https://ctp-space-systems.github.io/' },
-        { name: 'CTP-PSY', img: 'https://ctp-psy.github.io/assets/branding/ctp-psy-org-avatar.jpg', url: 'https://ctp-psy.github.io/' },
-        { name: 'CTPETEAMS', img: 'https://ctpeteams.github.io/assets/branding/ctpeteams-logo-400.jpg', url: 'https://ctpeteams.github.io/' },
-        { name: 'CTPIDM', img: 'https://ctpidm.github.io/assets/branding/ctpidm-org-avatar.jpg', url: 'https://ctpidm.github.io/' }
+        { name: 'CTPVerse Dashboard', img: '/assets/sites/ctpverse-org-avatar.jpg', url: 'https://ctpverse.github.io/' },
+        { name: 'CTP Magazine', img: '/assets/sites/ctp-magazine-1254x1254.png', url: 'https://ctp-magazine.github.io/' },
+        { name: 'FIN-DSP', img: '/assets/sites/findsp-logo-200x200.jpg', url: 'https://fin-dsp.github.io/' },
+        { name: 'CTP Music Portal', img: '/assets/sites/ctp-music-org-avatar.jpg', url: 'https://ctp-music.github.io/' },
+        { name: 'CTP Space Systems', img: '/assets/sites/ctp-space-systems-org-avatar.jpg', url: 'https://ctp-space-systems.github.io/' },
+        { name: 'CTP-PSY', img: '/assets/sites/ctp-psy-org-avatar.jpg', url: 'https://ctp-psy.github.io/' },
+        { name: 'CTPETEAMS', img: '/assets/sites/ctpeteams-logo-400.jpg', url: 'https://ctpeteams.github.io/' },
+        { name: 'CTPIDM', img: '/assets/sites/ctpidm-org-avatar.jpg', url: 'https://ctpidm.github.io/' }
       ];
       var link = document.getElementById('ctpverse-sites-rotator-link');
       var img = document.getElementById('ctpverse-sites-rotator-img');
