@@ -270,6 +270,85 @@
         html { scroll-behavior: auto; }
       }
 
+  /* CTP PHASE I — the faithful 2006 ctpenergy.com look: white content areas, black text, vivid royal blue #0000FE blocks, black menus, masthead blue #3345FD */
+  [data-theme="ctp-phase-i"]{
+    color-scheme:light;
+    --navy:#2233A7; --navy-dark:#0A0A2E; --blue:#0000FE; --blue-mid:#3345FD;
+    --blue-pale:#C9D2FF; --blue-wash:#FFFFFF; --blue-soft:#A9B8FF;
+    --page:#FFFFFF; --text:#000000; --text-2:#111111; --text-3:#222222; --muted:#2B3A73; --line:#0000FE;
+    --outer:#000000; --surface:#FFFFFF; --heading:#2233A7; --link:#0000FE; --link-hover:#000080;
+    --border-soft:#7A8CFF; --border-faint:#C9D2FF; --input-bg:#FFFFFF; --input-focus:#E9EDFF;
+    --btn-bg:#C9D2FF; --btn-text:#000000;
+    --header-grad:linear-gradient(to bottom,#4B66FF 0%,#3345FD 45%,#2233A7 100%);
+    --title-grad:linear-gradient(to bottom,#3345FD,#2233A7);
+    --nav-bg:#000000; --strip-bg:#0000FE;
+    --mark-bg:#000000; --mark-text:#FFFFFF; --hover-border:#0000FE;
+  }
+  /* Masthead sync: title matches the CTP mark box (--mark-text). */
+  [data-theme="ctp-phase-i"] .masthead .wordmark .name{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .masthead .wordmark .tag{color:#B0B8FF}
+  /* CLUB CTP LIGHT — CTP Phase I masthead blue #3345FD: bg #E9EDFF, panels white, primary #2233A7, text #0A0A2E */
+  [data-theme="club-ctp-light"]{
+    color-scheme:light;
+    --navy:#2233A7; --navy-dark:#0A0A2E; --blue:#3345FD; --blue-mid:#4B66FF;
+    --blue-pale:#C9D2FF; --blue-wash:#E9EDFF; --blue-soft:#A9B8FF;
+    --page:#E9EDFF; --text:#0A0A2E; --text-2:#0A0A2E; --text-3:#1A1A4E; --muted:#2B3A73; --line:#3345FD;
+    --outer:#000000; --surface:#FFFFFF; --heading:#2233A7; --link:#2233A7; --link-hover:#0A0A2E;
+    --border-soft:#7A8CFF; --border-faint:#C9D2FF; --input-bg:#FFFFFF; --input-focus:#E9EDFF;
+    --btn-bg:#C9D2FF; --btn-text:#0A0A2E;
+    --header-grad:linear-gradient(to bottom,#4B66FF 0%,#3345FD 45%,#2233A7 100%);
+    --title-grad:linear-gradient(to bottom,#4B66FF,#3345FD);
+    --nav-bg:#000000; --strip-bg:#3345FD;
+    --mark-bg:#000000; --mark-text:#FFFFFF; --hover-border:#3345FD;
+  }
+  /* Masthead sync: title matches the CTP mark box (--mark-text). */
+  [data-theme="club-ctp-light"] .masthead .wordmark .name{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .masthead .wordmark .tag{color:#B0B8FF}
+  /* CLUB CTP MEDIUM — bg #8597F9, panels #C9D2FF, primary #2233A7, text #0A0A2E */
+  [data-theme="club-ctp-medium"]{
+    color-scheme:light;
+    --navy:#2233A7; --navy-dark:#0A0A2E; --blue:#2B43FF; --blue-mid:#4B66FF;
+    --blue-pale:#A9B8FF; --blue-wash:#9FB0FF; --blue-soft:#7A8CFF;
+    --page:#8597F9; --text:#0A0A2E; --text-2:#0A0A2E; --text-3:#1A1A4E; --muted:#1A1A5E; --line:#2233A7;
+    --outer:#0A0A2E; --surface:#C9D2FF; --heading:#0A0A2E; --link:#2233A7; --link-hover:#000000;
+    --border-soft:#5A6CFF; --border-faint:#8597F9; --input-bg:#E9EDFF; --input-focus:#FFFFFF;
+    --btn-bg:#E9EDFF; --btn-text:#0A0A2E;
+    --header-grad:linear-gradient(to bottom,#4B66FF 0%,#3345FD 45%,#2233A7 100%);
+    --title-grad:linear-gradient(to bottom,#3345FD,#2233A7);
+    --nav-bg:#000000; --strip-bg:#2233A7;
+    --mark-bg:#0A0A2E; --mark-text:#E9EDFF; --hover-border:#3345FD;
+  }
+  /* Masthead sync: title matches the CTP mark box (--mark-text). */
+  [data-theme="club-ctp-medium"] .masthead .wordmark .name{color:#E9EDFF}
+  [data-theme="club-ctp-medium"] .masthead .wordmark .tag{color:#A9B8FF}
+  /* CLUB CTP MEDIUM DARK — bg #2233A7, panels #2836B0, primary #4B66FF, text #E9EDFF */
+  [data-theme="club-ctp-medium-dark"]{
+    color-scheme:dark;
+    --navy:#4B66FF; --navy-dark:#8597F9; --blue:#4B66FF; --blue-mid:#5A6CFF;
+    --blue-pale:#2836B0; --blue-wash:#0A0A2E; --blue-soft:#2B3A73;
+    --page:#2233A7; --text:#E9EDFF; --text-2:#E9EDFF; --text-3:#C9D2FF; --muted:#A9B8FF; --line:#4B66FF;
+    --outer:#0A0A2E; --surface:#2836B0; --heading:#8597F9; --link:#8597F9; --link-hover:#FFFFFF;
+    --border-soft:#3A4DFF; --border-faint:#2233A7; --input-bg:#0A0A2E; --input-focus:#2233A7;
+    --btn-bg:#2836B0; --btn-text:#E9EDFF;
+    --header-grad:linear-gradient(to bottom,#4B66FF 0%,#3345FD 45%,#0A0A2E 100%);
+    --title-grad:linear-gradient(to bottom,#3345FD,#2233A7);
+    --nav-bg:#000000; --strip-bg:#2233A7;
+    --mark-bg:#0A0A2E; --mark-text:#8597F9; --hover-border:#4B66FF;
+  }
+  /* CLUB CTP DARK — bg #0A0A2E, panels #1A1A4E, primary #4B66FF, text #FFFFFF */
+  [data-theme="club-ctp-dark"]{
+    color-scheme:dark;
+    --navy:#4B66FF; --navy-dark:#8597F9; --blue:#4B66FF; --blue-mid:#5A6CFF;
+    --blue-pale:#2233A7; --blue-wash:#0A0A2E; --blue-soft:#2836B0;
+    --page:#0A0A2E; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#E9EDFF; --muted:#A9B8FF; --line:#4B66FF;
+    --outer:#000000; --surface:#1A1A4E; --heading:#8597F9; --link:#8597F9; --link-hover:#FFFFFF;
+    --border-soft:#2B3A73; --border-faint:#2233A7; --input-bg:#0A0A2E; --input-focus:#1A1A4E;
+    --btn-bg:#1A1A4E; --btn-text:#FFFFFF;
+    --header-grad:linear-gradient(to bottom,#4B66FF 0%,#3345FD 45%,#000000 100%);
+    --title-grad:linear-gradient(to bottom,#3345FD,#2233A7);
+    --nav-bg:#000000; --strip-bg:#2233A7;
+    --mark-bg:#0A0A2E; --mark-text:#8597F9; --hover-border:#4B66FF;
+  }
 [data-theme="calamares"]{
     color-scheme:dark;
     --navy:#2AA5C4; --navy-dark:#7ED4E8; --blue:#2AA5C4; --blue-mid:#4CB8D4;
