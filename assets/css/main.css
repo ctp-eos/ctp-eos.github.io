@@ -287,28 +287,35 @@
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
   [data-theme="ctp-phase-i"] .masthead .wordmark .name{color:#FFFFFF}
   [data-theme="ctp-phase-i"] .masthead .wordmark .tag{color:#B0B8FF}
-  /* CTP PHASE I SIDEBAR — black panels, royal blue border, white text (2006 original) */
-  [data-theme="ctp-phase-i"] .col-left .module, [data-theme="ctp-phase-i"] .col-right .module{background:#000000; border:1px solid #0000FE; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
-  [data-theme="ctp-phase-i"] .col-left .module-title, [data-theme="ctp-phase-i"] .col-right .module-title{background:#000000; color:#FFFFFF; border-bottom:1px solid #0000FE}
-  [data-theme="ctp-phase-i"] .col-left .module-body, [data-theme="ctp-phase-i"] .col-right .module-body{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left .module-body p, [data-theme="ctp-phase-i"] .col-right .module-body p{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left a, [data-theme="ctp-phase-i"] .col-right a{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left a:hover, [data-theme="ctp-phase-i"] .col-right a:hover{color:#A9B8FF}
-  [data-theme="ctp-phase-i"] .col-left .menu li a, [data-theme="ctp-phase-i"] .col-right .menu li a{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left .menu li a:hover, [data-theme="ctp-phase-i"] .col-right .menu li a:hover{background:#0000FE; color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left .li-group h4, [data-theme="ctp-phase-i"] .col-right .li-group h4{color:#A9B8FF}
-  [data-theme="ctp-phase-i"] .col-left .li-group a, [data-theme="ctp-phase-i"] .col-right .li-group a{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left .li-group a:hover, [data-theme="ctp-phase-i"] .col-right .li-group a:hover{color:#A9B8FF}
-  [data-theme="ctp-phase-i"] .col-left .status td.k, [data-theme="ctp-phase-i"] .col-right .status td.k{color:#A9B8FF}
-  [data-theme="ctp-phase-i"] .col-left .status td.v, [data-theme="ctp-phase-i"] .col-right .status td.v{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left .promo .big, [data-theme="ctp-phase-i"] .col-right .promo .big{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .col-left .art-caption, [data-theme="ctp-phase-i"] .col-right .art-caption{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] #ctp-music{background:#000000}
-  [data-theme="ctp-phase-i"] #ctp-music .module-title{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] #ctp-music .mp-label, [data-theme="ctp-phase-i"] #ctp-music .mp-group, [data-theme="ctp-phase-i"] #ctp-music .cdom-head{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] #ctp-music .mp-channel, [data-theme="ctp-phase-i"] #ctp-music .mp-genre, [data-theme="ctp-phase-i"] #ctp-music .mp-status, [data-theme="ctp-phase-i"] #ctp-music .mp-source, [data-theme="ctp-phase-i"] #ctp-music .mp-note, [data-theme="ctp-phase-i"] #ctp-music .cdom-body{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] #ctp-music a{color:#FFFFFF}
-  [data-theme="ctp-phase-i"] .mp-nav:hover{background:#0000FE; color:#FFFFFF}
+  /* CTP PHASE I SIDEBAR — black panels, royal blue border, white text (2006 original) — LEFT COLUMN ONLY */
+  [data-theme="ctp-phase-i"] .col-left .module{background:#000000; border:1px solid #0000FE; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .module-title{background:#000000; color:#FFFFFF; border-bottom:1px solid #0000FE}
+  [data-theme="ctp-phase-i"] .col-left .module-body{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .module-body p{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left a{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left a:hover{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .menu li a{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .menu li a:hover{background:#0000FE; color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .menu li a.is-active{background:#0000FE; color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .p1-acc-head, [data-theme="ctp-phase-i"] .col-left .p2-acc-head{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .p1-acc-head:hover, [data-theme="ctp-phase-i"] .col-left .p2-acc-head:hover{background:#0000FE; color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .p1-item, [data-theme="ctp-phase-i"] .col-left .p2-item{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .p1-item:hover, [data-theme="ctp-phase-i"] .col-left .p2-item:hover{background:#0000FE; color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .p1-item.is-active, [data-theme="ctp-phase-i"] .col-left .p2-item.is-active{background:#0000FE; color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .p1-item .p1-item-id, [data-theme="ctp-phase-i"] .col-left .p2-item .p2-item-id{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .lineage-list .who{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .lineage-list .arr{color:#4B66FF}
+  [data-theme="ctp-phase-i"] .col-left .chan-btn{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .chan-btn:hover{background:#0000FE}
+  [data-theme="ctp-phase-i"] .col-left .chan-btn.active{background:#0000FE}
+  [data-theme="ctp-phase-i"] .col-left .chan-btn .gn{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .art-caption{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .li-group h4{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .li-group a{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .li-group a:hover{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .status td.k{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .status td.v{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .promo .big{color:#FFFFFF}
   /* CLUB CTP LIGHT — CTP Phase I masthead blue #3345FD: bg #E9EDFF, panels white, primary #2233A7, text #0A0A2E */
   [data-theme="club-ctp-light"]{
     color-scheme:light;
@@ -326,6 +333,35 @@
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
   [data-theme="club-ctp-light"] .masthead .wordmark .name{color:#FFFFFF}
   [data-theme="club-ctp-light"] .masthead .wordmark .tag{color:#B0B8FF}
+  /* CLUB CTP LEFT COLUMN — LIGHT: darker inverted panels (same inversion as 2006 original) */
+  [data-theme="club-ctp-light"] .col-left .module{background:#0A0A2E; border:1px solid #3345FD; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
+  [data-theme="club-ctp-light"] .col-left .module-title{background:#0A0A2E; color:#FFFFFF; border-bottom:1px solid #3345FD}
+  [data-theme="club-ctp-light"] .col-left .module-body{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .module-body p{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left a{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-light"] .col-left .menu li a{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .menu li a:hover{background:#3345FD; color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .menu li a.is-active{background:#3345FD; color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .p1-acc-head, [data-theme="club-ctp-light"] .col-left .p2-acc-head{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .p1-acc-head:hover, [data-theme="club-ctp-light"] .col-left .p2-acc-head:hover{background:#3345FD; color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .p1-item, [data-theme="club-ctp-light"] .col-left .p2-item{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .p1-item:hover, [data-theme="club-ctp-light"] .col-left .p2-item:hover{background:#3345FD; color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .p1-item.is-active, [data-theme="club-ctp-light"] .col-left .p2-item.is-active{background:#3345FD; color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .p1-item .p1-item-id, [data-theme="club-ctp-light"] .col-left .p2-item .p2-item-id{color:#A9B8FF}
+  [data-theme="club-ctp-light"] .col-left .lineage-list .who{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .lineage-list .arr{color:#4B66FF}
+  [data-theme="club-ctp-light"] .col-left .chan-btn{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .chan-btn:hover{background:#3345FD}
+  [data-theme="club-ctp-light"] .col-left .chan-btn.active{background:#3345FD}
+  [data-theme="club-ctp-light"] .col-left .chan-btn .gn{color:#A9B8FF}
+  [data-theme="club-ctp-light"] .col-left .art-caption{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .li-group h4{color:#A9B8FF}
+  [data-theme="club-ctp-light"] .col-left .li-group a{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .li-group a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-light"] .col-left .status td.k{color:#A9B8FF}
+  [data-theme="club-ctp-light"] .col-left .status td.v{color:#FFFFFF}
+  [data-theme="club-ctp-light"] .col-left .promo .big{color:#FFFFFF}
   /* CLUB CTP MEDIUM — bg #8597F9, panels #C9D2FF, primary #2233A7, text #0A0A2E */
   [data-theme="club-ctp-medium"]{
     color-scheme:light;
@@ -343,6 +379,35 @@
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
   [data-theme="club-ctp-medium"] .masthead .wordmark .name{color:#E9EDFF}
   [data-theme="club-ctp-medium"] .masthead .wordmark .tag{color:#A9B8FF}
+  /* CLUB CTP LEFT COLUMN — MEDIUM: darker inverted panels (same inversion as 2006 original) */
+  [data-theme="club-ctp-medium"] .col-left .module{background:#0A0A2E; border:1px solid #2B43FF; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
+  [data-theme="club-ctp-medium"] .col-left .module-title{background:#0A0A2E; color:#FFFFFF; border-bottom:1px solid #2B43FF}
+  [data-theme="club-ctp-medium"] .col-left .module-body{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .module-body p{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left a{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-medium"] .col-left .menu li a{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .menu li a:hover{background:#2B43FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .menu li a.is-active{background:#2B43FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .p1-acc-head, [data-theme="club-ctp-medium"] .col-left .p2-acc-head{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .p1-acc-head:hover, [data-theme="club-ctp-medium"] .col-left .p2-acc-head:hover{background:#2B43FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .p1-item, [data-theme="club-ctp-medium"] .col-left .p2-item{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .p1-item:hover, [data-theme="club-ctp-medium"] .col-left .p2-item:hover{background:#2B43FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .p1-item.is-active, [data-theme="club-ctp-medium"] .col-left .p2-item.is-active{background:#2B43FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .p1-item .p1-item-id, [data-theme="club-ctp-medium"] .col-left .p2-item .p2-item-id{color:#A9B8FF}
+  [data-theme="club-ctp-medium"] .col-left .lineage-list .who{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .lineage-list .arr{color:#4B66FF}
+  [data-theme="club-ctp-medium"] .col-left .chan-btn{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .chan-btn:hover{background:#2B43FF}
+  [data-theme="club-ctp-medium"] .col-left .chan-btn.active{background:#2B43FF}
+  [data-theme="club-ctp-medium"] .col-left .chan-btn .gn{color:#A9B8FF}
+  [data-theme="club-ctp-medium"] .col-left .art-caption{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .li-group h4{color:#A9B8FF}
+  [data-theme="club-ctp-medium"] .col-left .li-group a{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .li-group a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-medium"] .col-left .status td.k{color:#A9B8FF}
+  [data-theme="club-ctp-medium"] .col-left .status td.v{color:#FFFFFF}
+  [data-theme="club-ctp-medium"] .col-left .promo .big{color:#FFFFFF}
   /* CLUB CTP MEDIUM DARK — bg #2233A7, panels #2836B0, primary #4B66FF, text #E9EDFF */
   [data-theme="club-ctp-medium-dark"]{
     color-scheme:dark;
@@ -357,6 +422,35 @@
     --nav-bg:#000000; --strip-bg:#2233A7;
     --mark-bg:#0A0A2E; --mark-text:#8597F9; --hover-border:#4B66FF;
   }
+  /* CLUB CTP LEFT COLUMN — MEDIUM-DARK: darker inverted panels (same inversion as 2006 original) */
+  [data-theme="club-ctp-medium-dark"] .col-left .module{background:#000000; border:1px solid #4B66FF; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .module-title{background:#000000; color:#FFFFFF; border-bottom:1px solid #4B66FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .module-body{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .module-body p{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left a{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .menu li a{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .menu li a:hover{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .menu li a.is-active{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .p1-acc-head, [data-theme="club-ctp-medium-dark"] .col-left .p2-acc-head{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .p1-acc-head:hover, [data-theme="club-ctp-medium-dark"] .col-left .p2-acc-head:hover{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .p1-item, [data-theme="club-ctp-medium-dark"] .col-left .p2-item{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .p1-item:hover, [data-theme="club-ctp-medium-dark"] .col-left .p2-item:hover{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .p1-item.is-active, [data-theme="club-ctp-medium-dark"] .col-left .p2-item.is-active{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .p1-item .p1-item-id, [data-theme="club-ctp-medium-dark"] .col-left .p2-item .p2-item-id{color:#A9B8FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .lineage-list .who{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .lineage-list .arr{color:#8597F9}
+  [data-theme="club-ctp-medium-dark"] .col-left .chan-btn{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .chan-btn:hover{background:#4B66FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .chan-btn.active{background:#4B66FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .chan-btn .gn{color:#A9B8FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .art-caption{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .li-group h4{color:#A9B8FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .li-group a{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .li-group a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .status td.k{color:#A9B8FF}
+  [data-theme="club-ctp-medium-dark"] .col-left .status td.v{color:#FFFFFF}
+  [data-theme="club-ctp-medium-dark"] .col-left .promo .big{color:#FFFFFF}
   /* CLUB CTP DARK — bg #0A0A2E, panels #1A1A4E, primary #4B66FF, text #FFFFFF */
   [data-theme="club-ctp-dark"]{
     color-scheme:dark;
@@ -371,6 +465,35 @@
     --nav-bg:#000000; --strip-bg:#2233A7;
     --mark-bg:#0A0A2E; --mark-text:#8597F9; --hover-border:#4B66FF;
   }
+  /* CLUB CTP LEFT COLUMN — DARK: darker inverted panels (same inversion as 2006 original) */
+  [data-theme="club-ctp-dark"] .col-left .module{background:#000000; border:1px solid #4B66FF; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
+  [data-theme="club-ctp-dark"] .col-left .module-title{background:#000000; color:#FFFFFF; border-bottom:1px solid #4B66FF}
+  [data-theme="club-ctp-dark"] .col-left .module-body{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .module-body p{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left a{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-dark"] .col-left .menu li a{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .menu li a:hover{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .menu li a.is-active{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .p1-acc-head, [data-theme="club-ctp-dark"] .col-left .p2-acc-head{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .p1-acc-head:hover, [data-theme="club-ctp-dark"] .col-left .p2-acc-head:hover{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .p1-item, [data-theme="club-ctp-dark"] .col-left .p2-item{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .p1-item:hover, [data-theme="club-ctp-dark"] .col-left .p2-item:hover{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .p1-item.is-active, [data-theme="club-ctp-dark"] .col-left .p2-item.is-active{background:#4B66FF; color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .p1-item .p1-item-id, [data-theme="club-ctp-dark"] .col-left .p2-item .p2-item-id{color:#A9B8FF}
+  [data-theme="club-ctp-dark"] .col-left .lineage-list .who{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .lineage-list .arr{color:#8597F9}
+  [data-theme="club-ctp-dark"] .col-left .chan-btn{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .chan-btn:hover{background:#4B66FF}
+  [data-theme="club-ctp-dark"] .col-left .chan-btn.active{background:#4B66FF}
+  [data-theme="club-ctp-dark"] .col-left .chan-btn .gn{color:#A9B8FF}
+  [data-theme="club-ctp-dark"] .col-left .art-caption{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .li-group h4{color:#A9B8FF}
+  [data-theme="club-ctp-dark"] .col-left .li-group a{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .li-group a:hover{color:#A9B8FF}
+  [data-theme="club-ctp-dark"] .col-left .status td.k{color:#A9B8FF}
+  [data-theme="club-ctp-dark"] .col-left .status td.v{color:#FFFFFF}
+  [data-theme="club-ctp-dark"] .col-left .promo .big{color:#FFFFFF}
 [data-theme="calamares"]{
     color-scheme:dark;
     --navy:#2AA5C4; --navy-dark:#7ED4E8; --blue:#2AA5C4; --blue-mid:#4CB8D4;
