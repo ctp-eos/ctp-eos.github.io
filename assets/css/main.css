@@ -60,7 +60,7 @@
       /* ---------- Top nav ---------- */
       .topnav {
         background: var(--nav-bg); border-bottom: 1px solid var(--border-soft);
-        display: flex; flex-nowrap: nowrap; align-items: center; padding: 0; gap: 2px 10px;
+        display: flex; flex-wrap: nowrap; align-items: center; padding: 0; gap: 2px 10px;
         width: 100%;
       }
       .nav-links { display: flex; flex-wrap: nowrap; align-items: center; }
@@ -265,6 +265,10 @@
         .masthead .wordmark .name { font-size: 24px; }
         .hero .hero-name { font-size: 21px; }
         .featured img { width: 150px; height: 150px; }
+        /* Mobile nav: let the bar wrap to two rows so nothing is cut off. */
+        .topnav { flex-wrap: wrap; }
+        .nav-links { flex-wrap: wrap; }
+        .nav-controls { flex-wrap: wrap; min-width: 0; flex: 1 1 auto; margin-left: 0; }
       }
       @media (prefers-reduced-motion: reduce) {
         html { scroll-behavior: auto; }
