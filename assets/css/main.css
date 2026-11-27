@@ -290,7 +290,7 @@
   /* CTP PHASE I SIDEBAR — black panels, royal blue border, white text (2006 original) — LEFT COLUMN ONLY */
   [data-theme="ctp-phase-i"] .col-left .module{background:#000000; border:1px solid #0000FE; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
   [data-theme="ctp-phase-i"] .col-left .module-title{background:#000000; color:#FFFFFF; border-bottom:1px solid #0000FE}
-  [data-theme="ctp-phase-i"] .col-left .ad{--heading:#2233A7; --muted:#2B3A73; --text:#000000; --link:#0000FE}
+  [data-theme="ctp-phase-i"] .col-left .ad{background:#000000; border-color:#0000FE; --heading:#FFFFFF; --muted:#FFFFFF; --text:#FFFFFF; --link:#FFFFFF}
   [data-theme="ctp-phase-i"] .col-left .module-body{color:#FFFFFF}
   [data-theme="ctp-phase-i"] .col-left .module-body p{color:#FFFFFF}
   [data-theme="ctp-phase-i"] .col-left a{color:#FFFFFF}
