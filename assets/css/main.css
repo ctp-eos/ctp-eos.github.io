@@ -287,6 +287,28 @@
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
   [data-theme="ctp-phase-i"] .masthead .wordmark .name{color:#FFFFFF}
   [data-theme="ctp-phase-i"] .masthead .wordmark .tag{color:#B0B8FF}
+  /* CTP PHASE I SIDEBAR — black panels, royal blue border, white text (2006 original) */
+  [data-theme="ctp-phase-i"] .col-left .module, [data-theme="ctp-phase-i"] .col-right .module{background:#000000; border:1px solid #0000FE; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .module-title, [data-theme="ctp-phase-i"] .col-right .module-title{background:#000000; color:#FFFFFF; border-bottom:1px solid #0000FE}
+  [data-theme="ctp-phase-i"] .col-left .module-body, [data-theme="ctp-phase-i"] .col-right .module-body{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .module-body p, [data-theme="ctp-phase-i"] .col-right .module-body p{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left a, [data-theme="ctp-phase-i"] .col-right a{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left a:hover, [data-theme="ctp-phase-i"] .col-right a:hover{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .menu li a, [data-theme="ctp-phase-i"] .col-right .menu li a{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .menu li a:hover, [data-theme="ctp-phase-i"] .col-right .menu li a:hover{background:#0000FE; color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .li-group h4, [data-theme="ctp-phase-i"] .col-right .li-group h4{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .li-group a, [data-theme="ctp-phase-i"] .col-right .li-group a{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .li-group a:hover, [data-theme="ctp-phase-i"] .col-right .li-group a:hover{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .status td.k, [data-theme="ctp-phase-i"] .col-right .status td.k{color:#A9B8FF}
+  [data-theme="ctp-phase-i"] .col-left .status td.v, [data-theme="ctp-phase-i"] .col-right .status td.v{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .promo .big, [data-theme="ctp-phase-i"] .col-right .promo .big{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .col-left .art-caption, [data-theme="ctp-phase-i"] .col-right .art-caption{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] #ctp-music{background:#000000}
+  [data-theme="ctp-phase-i"] #ctp-music .module-title{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] #ctp-music .mp-label, [data-theme="ctp-phase-i"] #ctp-music .mp-group, [data-theme="ctp-phase-i"] #ctp-music .cdom-head{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] #ctp-music .mp-channel, [data-theme="ctp-phase-i"] #ctp-music .mp-genre, [data-theme="ctp-phase-i"] #ctp-music .mp-status, [data-theme="ctp-phase-i"] #ctp-music .mp-source, [data-theme="ctp-phase-i"] #ctp-music .mp-note, [data-theme="ctp-phase-i"] #ctp-music .cdom-body{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] #ctp-music a{color:#FFFFFF}
+  [data-theme="ctp-phase-i"] .mp-nav:hover{background:#0000FE; color:#FFFFFF}
   /* CLUB CTP LIGHT — CTP Phase I masthead blue #3345FD: bg #E9EDFF, panels white, primary #2233A7, text #0A0A2E */
   [data-theme="club-ctp-light"]{
     color-scheme:light;
