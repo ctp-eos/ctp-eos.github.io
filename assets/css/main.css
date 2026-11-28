@@ -522,25 +522,29 @@
     --navy:#003366; --navy-dark:#001f3f; --blue:#006699; --blue-mid:#3399cc;
     --blue-pale:#dee3e7; --blue-wash:#f2f5f8; --blue-soft:#d6e0eb;
     --page:#e9edf1; --text:#000000; --text-2:#222222; --text-3:#333333; --muted:#444444; --line:#003366;
-    --outer:#dee3e7; --surface:#ffffff; --heading:#003366; --link:#006699; --link-hover:#000000;
+    --outer:#000000; --surface:#ffffff; --heading:#003366; --link:#006699; --link-hover:#000000;
     --border-soft:#99aabb; --border-faint:#ccd5dd; --input-bg:#ffffff; --input-focus:#f2f8fc;
     --btn-bg:#e7e7e7; --btn-text:#000000; --header-grad:linear-gradient(to bottom,#3399cc 0%,#006699 45%,#003366 100%);
     --title-grad:linear-gradient(to bottom,#006699,#003366); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#ffffff; --mark-text:#003366; --hover-border:#000000;
+    --mark-bg:#000000; --mark-text:#ffffff; --hover-border:#000000;
   }
+  /* Masthead sync: title matches the CTP mark box (--mark-text). */
+  [data-theme="light"] .masthead .wordmark .name{color:#ffffff}
+  [data-theme="light"] .masthead .wordmark .tag{color:#b0bec5}
 [data-theme="medium"]{
     color-scheme:light;
     --navy:#1f425f; --navy-dark:#132c42; --blue:#356a8a; --blue-mid:#5f8dab;
     --blue-pale:#b9cbd9; --blue-wash:#c6d4e0; --blue-soft:#aebfd0;
     --page:#8fa6b8; --text:#0d1d2b; --text-2:#1c2f3f; --text-3:#24384a; --muted:#24384a; --line:#1f425f;
-    --outer:#c6d4e0; --surface:#d9e3ec; --heading:#12334f; --link:#174a6b; --link-hover:#000000;
+    --outer:#263645; --surface:#d9e3ec; --heading:#12334f; --link:#174a6b; --link-hover:#000000;
     --border-soft:#6f8aa0; --border-faint:#8fa6b8; --input-bg:#eef3f7; --input-focus:#ffffff;
     --btn-bg:#c2d0dd; --btn-text:#0d1d2b; --header-grad:linear-gradient(to bottom,#4f7d9d 0%,#3d698c 45%,#1f425f 100%);
     --title-grad:linear-gradient(to bottom,#3d698c,#1f425f); --nav-bg:#132c42; --strip-bg:#132c42;
-    --mark-bg:#eef3f7; --mark-text:#1f425f; --hover-border:#0d1d2b;
+    --mark-bg:#263645; --mark-text:#eef3f7; --hover-border:#0d1d2b;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="medium"] .masthead .wordmark .name{color:#1f425f}
+  [data-theme="medium"] .masthead .wordmark .name{color:#eef3f7}
+  [data-theme="medium"] .masthead .wordmark .tag{color:#c6d4e0}
 [data-theme="eos"]{
     color-scheme:dark;
     --navy:#00aeef; --navy-dark:#7ed6ff; --blue:#00aeef; --blue-mid:#29bdf0;
@@ -568,12 +572,15 @@
     --navy:#0b395d; --navy-dark:#011631; --blue:#0b395d; --blue-mid:#00aeef;
     --blue-pale:#c7d7e5; --blue-wash:#cddce9; --blue-soft:#b0c4d6;
     --page:#9db8cc; --text:#011631; --text-2:#011631; --text-3:#021d38; --muted:#062f4f; --line:#0b395d;
-    --outer:#b0c4d6; --surface:#d7e3ee; --heading:#0b395d; --link:#062f4f; --link-hover:#011631;
+    --outer:#062f4f; --surface:#d7e3ee; --heading:#0b395d; --link:#062f4f; --link-hover:#011631;
     --border-soft:#7a9bb3; --border-faint:#9db8cc; --input-bg:#eaf2f8; --input-focus:#ffffff;
     --btn-bg:#eaf2f8; --btn-text:#011631; --header-grad:linear-gradient(to bottom,#12507d 0%,#0b395d 45%,#062f4f 100%);
     --title-grad:linear-gradient(to bottom,#0b395d,#062f4f); --nav-bg:#011631; --strip-bg:#011631;
-    --mark-bg:#eaf2f8; --mark-text:#0b395d; --hover-border:#00aeef;
+    --mark-bg:#062f4f; --mark-text:#eaf2f8; --hover-border:#00aeef;
   }
+  /* Masthead sync: title matches the CTP mark box (--mark-text). */
+  [data-theme="eos-medium"] .masthead .wordmark .name{color:#eaf2f8}
+  [data-theme="eos-medium"] .masthead .wordmark .tag{color:#c0c8d0}
 [data-theme="eos-medium-dark"]{
     color-scheme:dark;
     --navy:#00aeef; --navy-dark:#7ed6ff; --blue:#00aeef; --blue-mid:#29bdf0;
@@ -583,10 +590,10 @@
     --border-soft:#2a5a7f; --border-faint:#062f4f; --input-bg:#021d38; --input-focus:#062f4f;
     --btn-bg:#062f4f; --btn-text:#eaf2f8; --header-grad:linear-gradient(to bottom,#00aeef 0%,#0b395d 45%,#011631 100%);
     --title-grad:linear-gradient(to bottom,#0b395d,#062f4f); --nav-bg:#011631; --strip-bg:#011631;
-    --mark-bg:#021d38; --mark-text:#00aeef; --hover-border:#00aeef;
+    --mark-bg:#021d38; --mark-text:#7ed6ff; --hover-border:#00aeef;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="eos-medium-dark"] .masthead .wordmark .name{color:#00aeef}
+  [data-theme="eos-medium-dark"] .masthead .wordmark .name{color:#7ed6ff}
 [data-theme="eos-dark"]{
     color-scheme:dark;
     --navy:#00aeef; --navy-dark:#7ed6ff; --blue:#00aeef; --blue-mid:#29bdf0;
@@ -596,10 +603,10 @@
     --border-soft:#0b395d; --border-faint:#062f4f; --input-bg:#011631; --input-focus:#062f4f;
     --btn-bg:#062f4f; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00aeef 0%,#062f4f 45%,#011631 100%);
     --title-grad:linear-gradient(to bottom,#062f4f,#021d38); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#011631; --mark-text:#00aeef; --hover-border:#00aeef;
+    --mark-bg:#011631; --mark-text:#5ed4ff; --hover-border:#00aeef;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="eos-dark"] .masthead .wordmark .name{color:#00aeef}
+  [data-theme="eos-dark"] .masthead .wordmark .name{color:#5ed4ff}
 [data-theme="space-cadet-light"]{
     color-scheme:light;
     --navy:#333365; --navy-dark:#1A1A33; --blue:#333365; --blue-mid:#4A4A80;
@@ -616,14 +623,15 @@
     --navy:#333365; --navy-dark:#1A1A33; --blue:#333365; --blue-mid:#4A4A80;
     --blue-pale:#A8A8C4; --blue-wash:#9AA0BC; --blue-soft:#9A9AB8;
     --page:#8F8FB0; --text:#1A1A33; --text-2:#1A1A33; --text-3:#26264D; --muted:#26264d; --line:#333365;
-    --outer:#e8e8f2; --surface:#B8B8CC; --heading:#232348; --link:#2A2A55; --link-hover:#1A1A33;
+    --outer:#333365; --surface:#B8B8CC; --heading:#232348; --link:#2A2A55; --link-hover:#1A1A33;
     --border-soft:#6E6E94; --border-faint:#8F8FB0; --input-bg:#E8E8F2; --input-focus:#FFFFFF;
     --btn-bg:#E8E8F2; --btn-text:#1A1A33; --header-grad:linear-gradient(to bottom,#4A4A80 0%,#333365 45%,#1A1A33 100%);
     --title-grad:linear-gradient(to bottom,#4A4A80,#333365); --nav-bg:#1A1A33; --strip-bg:#1A1A33;
-    --mark-bg:#E8E8F2; --mark-text:#333365; --hover-border:#333365;
+    --mark-bg:#333365; --mark-text:#E8E8F2; --hover-border:#333365;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="space-cadet-medium"] .masthead .wordmark .name{color:#333365}
+  [data-theme="space-cadet-medium"] .masthead .wordmark .name{color:#E8E8F2}
+  [data-theme="space-cadet-medium"] .masthead .wordmark .tag{color:#B8B8CC}
 [data-theme="space-cadet-medium-dark"]{
     color-scheme:dark;
     --navy:#9A9AD0; --navy-dark:#B8B8E8; --blue:#9A9AD0; --blue-mid:#A8A8DC;
@@ -633,10 +641,10 @@
     --border-soft:#5A5A94; --border-faint:#333365; --input-bg:#26264D; --input-focus:#333365;
     --btn-bg:#333365; --btn-text:#E8E8F0; --header-grad:linear-gradient(to bottom,#9A9AD0 0%,#45457C 45%,#1A1A33 100%);
     --title-grad:linear-gradient(to bottom,#45457C,#333365); --nav-bg:#1A1A33; --strip-bg:#1A1A33;
-    --mark-bg:#26264D; --mark-text:#9A9AD0; --hover-border:#9A9AD0;
+    --mark-bg:#26264D; --mark-text:#B8B8E8; --hover-border:#9A9AD0;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="space-cadet-medium-dark"] .masthead .wordmark .name{color:#9A9AD0}
+  [data-theme="space-cadet-medium-dark"] .masthead .wordmark .name{color:#B8B8E8}
 [data-theme="space-cadet-dark"]{
     color-scheme:dark;
     --navy:#8A8AC8; --navy-dark:#A8A8E0; --blue:#8A8AC8; --blue-mid:#9A9AD8;
@@ -646,10 +654,10 @@
     --border-soft:#333365; --border-faint:#1F1F40; --input-bg:#14142B; --input-focus:#1F1F40;
     --btn-bg:#1F1F40; --btn-text:#FFFFFF; --header-grad:linear-gradient(to bottom,#8A8AC8 0%,#1F1F40 45%,#14142B 100%);
     --title-grad:linear-gradient(to bottom,#1F1F40,#14142B); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#14142B; --mark-text:#8A8AC8; --hover-border:#8A8AC8;
+    --mark-bg:#14142B; --mark-text:#A8A8E0; --hover-border:#8A8AC8;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="space-cadet-dark"] .masthead .wordmark .name{color:#8A8AC8}
+  [data-theme="space-cadet-dark"] .masthead .wordmark .name{color:#A8A8E0}
   /* CTP FOUNDER — palette from the CTP-EOS desktop: deep navy #071c28 / #030f19, steel teal #184e67 / #16394b, accent cyan #4c9cbd, bright #8fd8ef */
   /* CTP FOUNDER — bg #16394b, panels #184e67, primary #4c9cbd, text #ffffff */
 [data-theme="founder"]{
@@ -724,10 +732,10 @@
     --border-soft:#2A3A5E; --border-faint:#141D33; --input-bg:#0A1128; --input-focus:#141D33;
     --btn-bg:#141D33; --btn-text:#E8EEF7; --header-grad:linear-gradient(to bottom,#5B8DEF 0%,#141D33 45%,#0A1128 100%);
     --title-grad:linear-gradient(to bottom,#5B8DEF,#141D33); --nav-bg:#05081A; --strip-bg:#05081A;
-    --mark-bg:#0A1128; --mark-text:#5B8DEF; --hover-border:#5B8DEF;
+    --mark-bg:#0A1128; --mark-text:#8FB4FF; --hover-border:#5B8DEF;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="midnight-blue"] .masthead .wordmark .name{color:#5B8DEF}
+  [data-theme="midnight-blue"] .masthead .wordmark .name{color:#8FB4FF}
 [data-theme="midnight"]{
     color-scheme:dark;
     --navy:#B8B8B8; --navy-dark:#E0E0E0; --blue:#B8B8B8; --blue-mid:#C8C8C8;
@@ -737,10 +745,10 @@
     --border-soft:#333333; --border-faint:#111111; --input-bg:#000000; --input-focus:#111111;
     --btn-bg:#111111; --btn-text:#E8E8E8; --header-grad:linear-gradient(to bottom,#B8B8B8 0%,#111111 45%,#000000 100%);
     --title-grad:linear-gradient(to bottom,#B8B8B8,#111111); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#000000; --mark-text:#B8B8B8; --hover-border:#B8B8B8;
+    --mark-bg:#000000; --mark-text:#E0E0E0; --hover-border:#B8B8B8;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="midnight"] .masthead .wordmark .name{color:#B8B8B8}
+  [data-theme="midnight"] .masthead .wordmark .name{color:#E0E0E0}
 [data-theme="tecknotronic-psy"]{
     color-scheme:dark;
     --navy:#00aeef; --navy-dark:#7ed6ff; --blue:#00aeef; --blue-mid:#29bdf0;
@@ -750,10 +758,10 @@
     --border-soft:#333333; --border-faint:#1a1a1a; --input-bg:#0a0a0a; --input-focus:#1a1a1a;
     --btn-bg:#1a1a1a; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00aeef 0%,#1a1a1a 45%,#000000 100%);
     --title-grad:linear-gradient(to bottom,#00aeef,#1a1a1a); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0a0a0a; --mark-text:#00aeef; --hover-border:#00aeef;
+    --mark-bg:#0a0a0a; --mark-text:#5ed4ff; --hover-border:#00aeef;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="tecknotronic-psy"] .masthead .wordmark .name{color:#00aeef}
+  [data-theme="tecknotronic-psy"] .masthead .wordmark .name{color:#5ed4ff}
 [data-theme="tecknotronic-matrix"]{
     color-scheme:dark;
     --navy:#00ff41; --navy-dark:#7dff9e; --blue:#00ff41; --blue-mid:#33ff66;
@@ -763,10 +771,10 @@
     --border-soft:#333333; --border-faint:#1a1a1a; --input-bg:#0a0a0a; --input-focus:#1a1a1a;
     --btn-bg:#1a1a1a; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00ff41 0%,#1a1a1a 45%,#000000 100%);
     --title-grad:linear-gradient(to bottom,#00ff41,#1a1a1a); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0a0a0a; --mark-text:#00ff41; --hover-border:#00ff41;
+    --mark-bg:#0a0a0a; --mark-text:#5eff8a; --hover-border:#00ff41;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="tecknotronic-matrix"] .masthead .wordmark .name{color:#00ff41}
+  [data-theme="tecknotronic-matrix"] .masthead .wordmark .name{color:#5eff8a}
 [data-theme="ctpix"]{
     color-scheme:dark;
     --navy:#53bffc; --navy-dark:#8bf; --blue:#53bffc; --blue-mid:#4499ff;
@@ -776,10 +784,10 @@
     --border-soft:#767676; --border-faint:#1b1a1a; --input-bg:#111; --input-focus:#1b1a1a;
     --btn-bg:#0f3147; --btn-text:#d9d9d9; --header-grad:linear-gradient(to bottom,#0f3147 0%,#1b1a1a 45%,#0b0a0a 100%);
     --title-grad:linear-gradient(to bottom,#53bffc,#4499ff); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0b0a0a; --mark-text:#53bffc; --hover-border:#53bffc;
+    --mark-bg:#0b0a0a; --mark-text:#eaeaea; --hover-border:#53bffc;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="ctpix"] .masthead .wordmark .name{color:#53bffc}
+  [data-theme="ctpix"] .masthead .wordmark .name{color:#eaeaea}
 [data-theme="cdomain-light"]{
     color-scheme:light;
     --navy:#1c2447; --navy-dark:#10142e; --blue:#6a5ae0; --blue-mid:#2f6fd0;
@@ -802,10 +810,10 @@
     --border-soft:#4c58a0; --border-faint:#39427c; --input-bg:#2b3160; --input-focus:#333c6e;
     --btn-bg:#3d4680; --btn-text:#e2e8ff; --header-grad:linear-gradient(to bottom,#3d4680 0%,#333c6e 45%,#2a3260 100%);
     --title-grad:linear-gradient(to bottom,#333c6e,#2b3160); --nav-bg:#232a52; --strip-bg:#232a52;
-    --mark-bg:#2b3160; --mark-text:#8fd0ff; --hover-border:#a89aff;
+    --mark-bg:#2b3160; --mark-text:#f5f7ff; --hover-border:#a89aff;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="cdomain-medium"] .masthead .wordmark .name{color:#8fd0ff}
+  [data-theme="cdomain-medium"] .masthead .wordmark .name{color:#f5f7ff}
 [data-theme="cdomain-medium-dark"]{
     color-scheme:dark;
     --navy:#9a8cff; --navy-dark:#a9c6ff; --blue:#7cc8ff; --blue-mid:#9a8cff;
@@ -815,10 +823,10 @@
     --border-soft:#39406e; --border-faint:#262c52; --input-bg:#171b36; --input-focus:#1c2247;
     --btn-bg:#2a3260; --btn-text:#dde5ff; --header-grad:linear-gradient(to bottom,#2a3260 0%,#1c2247 45%,#141a38 100%);
     --title-grad:linear-gradient(to bottom,#1c2247,#171b36); --nav-bg:#171b36; --strip-bg:#171b36;
-    --mark-bg:#171b36; --mark-text:#7cc8ff; --hover-border:#9a8cff;
+    --mark-bg:#171b36; --mark-text:#f2f5ff; --hover-border:#9a8cff;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="cdomain-medium-dark"] .masthead .wordmark .name{color:#7cc8ff}
+  [data-theme="cdomain-medium-dark"] .masthead .wordmark .name{color:#f2f5ff}
 [data-theme="cdomain-dark"]{
     color-scheme:dark;
     --navy:#8a7cff; --navy-dark:#8fb8ff; --blue:#6fc4ff; --blue-mid:#8a7cff;
@@ -828,10 +836,10 @@
     --border-soft:#2c3565; --border-faint:#1c2247; --input-bg:#0b0f26; --input-focus:#10142e;
     --btn-bg:#1c2247; --btn-text:#d9e4ff; --header-grad:linear-gradient(to bottom,#1c2247 0%,#10142e 45%,#070b1d 100%);
     --title-grad:linear-gradient(to bottom,#10142e,#0b0f26); --nav-bg:#0b0f26; --strip-bg:#0b0f26;
-    --mark-bg:#0b0f26; --mark-text:#8fb8ff; --hover-border:#8a7cff;
+    --mark-bg:#0b0f26; --mark-text:#f0f4ff; --hover-border:#8a7cff;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="cdomain-dark"] .masthead .wordmark .name{color:#8fb8ff}
+  [data-theme="cdomain-dark"] .masthead .wordmark .name{color:#f0f4ff}
 [data-theme="frey-light"]{
     color-scheme:light;
     --navy:#294155; --navy-dark:#12283b; --blue:#294155; --blue-mid:#3a5364;
@@ -854,10 +862,10 @@
     --border-soft:#4e6875; --border-faint:#6b879b; --input-bg:#9ab9cf; --input-focus:#aecbdc;
     --btn-bg:#9ab9cf; --btn-text:#12283b; --header-grad:linear-gradient(to bottom,#4e6875 0%,#3a5364 45%,#243a4c 100%);
     --title-grad:linear-gradient(to bottom,#3a5364,#294155); --nav-bg:#12283b; --strip-bg:#12283b;
-    --mark-bg:#aecbdc; --mark-text:#294155; --hover-border:#12283b;
+    --mark-bg:#aecbdc; --mark-text:#12283b; --hover-border:#12283b;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="frey-medium"] .masthead .wordmark .name{color:#294155}
+  [data-theme="frey-medium"] .masthead .wordmark .name{color:#12283b}
 [data-theme="frey-medium-dark"]{
     color-scheme:dark;
     --navy:#8fadc3; --navy-dark:#aecbdc; --blue:#9ab9cf; --blue-mid:#8fadc3;
@@ -867,10 +875,10 @@
     --border-soft:#6b879b; --border-faint:#294155; --input-bg:#243a4c; --input-focus:#3a5364;
     --btn-bg:#3a5364; --btn-text:#aecbdc; --header-grad:linear-gradient(to bottom,#6b879b 0%,#4e6875 45%,#243a4c 100%);
     --title-grad:linear-gradient(to bottom,#4e6875,#3a5364); --nav-bg:#243a4c; --strip-bg:#243a4c;
-    --mark-bg:#243a4c; --mark-text:#9ab9cf; --hover-border:#9ab9cf;
+    --mark-bg:#243a4c; --mark-text:#ffffff; --hover-border:#9ab9cf;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="frey-medium-dark"] .masthead .wordmark .name{color:#9ab9cf}
+  [data-theme="frey-medium-dark"] .masthead .wordmark .name{color:#ffffff}
 [data-theme="frey-dark"]{
     color-scheme:dark;
     --navy:#8fadc3; --navy-dark:#aecbdc; --blue:#6b879b; --blue-mid:#8fadc3;
@@ -880,10 +888,10 @@
     --border-soft:#3a5364; --border-faint:#243a4c; --input-bg:#12283b; --input-focus:#20374b;
     --btn-bg:#243a4c; --btn-text:#aecbdc; --header-grad:linear-gradient(to bottom,#243a4c 0%,#20374b 45%,#12283b 100%);
     --title-grad:linear-gradient(to bottom,#20374b,#12283b); --nav-bg:#12283b; --strip-bg:#12283b;
-    --mark-bg:#12283b; --mark-text:#8fadc3; --hover-border:#8fadc3;
+    --mark-bg:#12283b; --mark-text:#ffffff; --hover-border:#8fadc3;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="frey-dark"] .masthead .wordmark .name{color:#8fadc3}
+  [data-theme="frey-dark"] .masthead .wordmark .name{color:#ffffff}
 [data-theme="dark"]{
     color-scheme:dark;
     --navy:#7fb8e6; --navy-dark:#99ccff; --blue:#4da3d8; --blue-mid:#3399cc;
@@ -1014,10 +1022,10 @@
     --border-soft:#073642; --border-faint:#00212b; --input-bg:#00141a; --input-focus:#00212b;
     --btn-bg:#073642; --btn-text:#fdf6e3; --header-grad:linear-gradient(to bottom,#073642 0%,#00212b 100%);
     --title-grad:linear-gradient(to bottom,#0f4f5c,#022b34); --nav-bg:#00141a; --strip-bg:#00141a;
-    --mark-bg:#00141a; --mark-text:#2aa198; --hover-border:#2aa198;
+    --mark-bg:#00141a; --mark-text:#fdf6e3; --hover-border:#2aa198;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="solarized"] .masthead .wordmark .name{color:#2aa198}
+  [data-theme="solarized"] .masthead .wordmark .name{color:#fdf6e3}
 [data-theme="void-signal"]{
     color-scheme:dark;
     --navy:#7C5CFF; --navy-dark:#B3A1FF; --blue:#7C5CFF; --blue-mid:#9378FF;
@@ -1027,10 +1035,10 @@
     --border-soft:#2E2F4A; --border-faint:#11121A; --input-bg:#07070C; --input-focus:#11121A;
     --btn-bg:#11121A; --btn-text:#E8E8F0; --header-grad:linear-gradient(to bottom,#7C5CFF 0%,#11121A 45%,#07070C 100%);
     --title-grad:linear-gradient(to bottom,#7C5CFF,#11121A); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#07070C; --mark-text:#7C5CFF; --hover-border:#7C5CFF;
+    --mark-bg:#07070C; --mark-text:#B3A1FF; --hover-border:#7C5CFF;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="void-signal"] .masthead .wordmark .name{color:#7C5CFF}
+  [data-theme="void-signal"] .masthead .wordmark .name{color:#B3A1FF}
 [data-theme="plasma-field"]{
     color-scheme:dark;
     --navy:#FF3D6E; --navy-dark:#FF8FAB; --blue:#FF3D6E; --blue-mid:#FF5C85;
@@ -1040,10 +1048,10 @@
     --border-soft:#4A2436; --border-faint:#170D12; --input-bg:#0C0608; --input-focus:#170D12;
     --btn-bg:#170D12; --btn-text:#F3E9EC; --header-grad:linear-gradient(to bottom,#FF3D6E 0%,#170D12 45%,#0C0608 100%);
     --title-grad:linear-gradient(to bottom,#FF3D6E,#170D12); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0C0608; --mark-text:#FF3D6E; --hover-border:#FF3D6E;
+    --mark-bg:#0C0608; --mark-text:#FF8FAB; --hover-border:#FF3D6E;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="plasma-field"] .masthead .wordmark .name{color:#FF3D6E}
+  [data-theme="plasma-field"] .masthead .wordmark .name{color:#FF8FAB}
 [data-theme="cathode-green"]{
     color-scheme:dark;
     --navy:#29E08F; --navy-dark:#6FF2B0; --blue:#29E08F; --blue-mid:#4AE8A3;
@@ -1053,10 +1061,10 @@
     --border-soft:#24483A; --border-faint:#0C1712; --input-bg:#040D0A; --input-focus:#0C1712;
     --btn-bg:#0C1712; --btn-text:#E6F5EE; --header-grad:linear-gradient(to bottom,#29E08F 0%,#0C1712 45%,#040D0A 100%);
     --title-grad:linear-gradient(to bottom,#29E08F,#0C1712); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#040D0A; --mark-text:#29E08F; --hover-border:#29E08F;
+    --mark-bg:#040D0A; --mark-text:#6FF2B0; --hover-border:#29E08F;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="cathode-green"] .masthead .wordmark .name{color:#29E08F}
+  [data-theme="cathode-green"] .masthead .wordmark .name{color:#6FF2B0}
 [data-theme="deep-current"]{
     color-scheme:dark;
     --navy:#31A6FF; --navy-dark:#7CC6FF; --blue:#31A6FF; --blue-mid:#4DB2FF;
@@ -1066,10 +1074,10 @@
     --border-soft:#24465E; --border-faint:#0C1D2B; --input-bg:#05101A; --input-focus:#0C1D2B;
     --btn-bg:#0C1D2B; --btn-text:#E6F0F7; --header-grad:linear-gradient(to bottom,#31A6FF 0%,#0C1D2B 45%,#05101A 100%);
     --title-grad:linear-gradient(to bottom,#31A6FF,#0C1D2B); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#05101A; --mark-text:#31A6FF; --hover-border:#31A6FF;
+    --mark-bg:#05101A; --mark-text:#7CC6FF; --hover-border:#31A6FF;
   }
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
-  [data-theme="deep-current"] .masthead .wordmark .name{color:#31A6FF}
+  [data-theme="deep-current"] .masthead .wordmark .name{color:#7CC6FF}
 [data-theme="convergence"]{
     color-scheme:dark;
     --navy:#729BB3; --navy-dark:#BFDDE9; --blue:#729BB3; --blue-mid:#91B9CD;
