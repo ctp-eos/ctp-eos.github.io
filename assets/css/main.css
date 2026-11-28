@@ -99,6 +99,42 @@
       .module-body p { margin: 0 0 10px; color: var(--text-2); }
       .module-body p:last-child { margin-bottom: 0; }
 
+      .byline{
+    background:var(--blue-wash); border-bottom:1px dotted var(--blue);
+    font-size:10.5px; color:var(--muted); text-align:center; padding:4px 10px;
+  }
+  /* Pitch images fit their module: without this they render at full
+     natural size and blow out of the column. */
+  .report-body img{max-width:100%; height:auto; display:block}
+  /* Investor pitch — full pitch module, same style as the Dashboard's Implications Report module */
+  .report-module{border:2px solid var(--navy); outline:1px solid var(--blue)}
+  .report-module .module-title{font-size:14px; padding:8px 10px; line-height:1.35}
+  .report-body{font-size:12.5px; line-height:1.65; color:var(--text-2)}
+  .report-body p{margin:0 0 10px}
+  .report-body h3{font-family:Tahoma,Verdana,sans-serif; font-size:17px; line-height:1.3; color:var(--heading); margin:18px 0 8px}
+  .report-body h3:first-child{margin-top:2px}
+  .report-body h4{font-family:Tahoma,Verdana,sans-serif; font-size:13px; line-height:1.35; color:var(--heading); margin:16px 0 6px; text-transform:uppercase; letter-spacing:.04em}
+  .report-body h5{font-family:Tahoma,Verdana,sans-serif; font-size:12.5px; line-height:1.4; color:var(--heading); margin:14px 0 6px}
+  .report-lede{font-size:14px; line-height:1.55; color:var(--text)}
+  .report-claim{border:1px solid var(--navy); background:var(--blue-wash); padding:10px 12px; margin:12px 0; font-size:13px; line-height:1.6; color:var(--text)}
+  .report-meta{border:1px solid var(--border-soft); background:var(--blue-wash); padding:9px 10px; margin:12px 0; font-size:11.5px}
+  .report-cols{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:10px 0}
+  .report-cols .report-col{border:1px solid var(--blue); background:var(--blue-wash); padding:9px 10px}
+  .report-cols .report-col p{margin:0}
+  .report-table{width:100%; border-collapse:collapse; margin:10px 0 12px; font-size:11.5px}
+  .report-table th,.report-table td{border:1px solid var(--blue); padding:6px 8px; text-align:left; vertical-align:top}
+  .report-table th{background:var(--blue-pale); color:var(--heading); font-family:Tahoma,Verdana,sans-serif}
+  .report-body ol,.report-body ul{margin:6px 0 12px; padding-left:22px}
+  .report-body li{margin:0 0 6px}
+  .report-fund{font-family:Tahoma,Verdana,sans-serif; font-size:24px; font-weight:bold; text-align:center; color:var(--heading); letter-spacing:.04em; margin:18px 0 4px; padding:14px 10px; border:2px solid var(--navy); background:var(--blue-pale)}
+  .doc-independence{border:2px solid var(--navy); background:var(--blue-wash); padding:10px 12px; margin:0 0 12px; font-family:Tahoma,Verdana,sans-serif; font-size:13px; font-weight:bold; line-height:1.55; color:var(--text); text-align:center}
+  .report-figs{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:12px 0}
+  .report-figs .report-fig{border:1px solid var(--navy); background:var(--blue-wash); padding:10px 12px; text-align:center}
+  .report-figs .report-fig b{display:block; font-family:Tahoma,Verdana,sans-serif; font-size:26px; line-height:1.15; color:var(--heading); margin-bottom:4px}
+  .report-figs .report-fig span{font-size:11.5px; line-height:1.5; color:var(--text-2)}
+  @media (max-width:680px){ .report-figs{grid-template-columns:1fr} }
+  @media (max-width:680px){ .report-cols{grid-template-columns:1fr} .report-fund{font-size:20px} }
+
       .menu { list-style: none; margin: 0; padding: 6px 0; }
       .menu li a {
         display: block; padding: 7px 12px; min-height: 36px; color: var(--text-2);
